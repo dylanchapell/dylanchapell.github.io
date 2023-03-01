@@ -33,3 +33,13 @@ header {
 
 .right{text-align:right;
 	float:right;}
+
+.nic-img{
+	width:31%;
+	padding:1%;
+	style:inline;
+}
+#nic-image-div{
+	border:1px solid #000000;
+	max-width:500px;
+}
