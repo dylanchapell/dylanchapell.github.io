@@ -5,11 +5,11 @@ body {
 footer {
 	text-align: center;
 }
-h1 {	text-align: center;
+#name-header {	text-align: center;
 	color: #ffffff;
 	text-shadow: 2px 2px black;
 }
-h2 {	text-align:center;
+#cs-student {	text-align:center;
 	color: #ffffff;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -22,3 +22,12 @@ header {
 	text-align:center;
 }
 
+#content {
+	border-bottom: 1px solid #000000;
+}
+
+.left{text-align:left;
+	float:left;}
+
+.right{text-align:right;
+	float:right;}
