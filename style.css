@@ -35,11 +35,14 @@ header {
 	float:right;}
 
 .nic-img{
-	width:31%;
+	width:48%;
 	padding:1%;
 	style:inline;
 }
 #nic-image-div{
 	border:1px solid #000000;
 	max-width:500px;
+}
+#net-vid{
+	padding:5px
 }
