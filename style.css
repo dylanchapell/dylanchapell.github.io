@@ -35,7 +35,7 @@ header {
 	float:right;}
 
 .nic-img{
-	width:48%;
+	width:30%;
 	padding:1%;
 	style:inline;
 }
@@ -44,5 +44,7 @@ header {
 	max-width:500px;
 }
 #net-vid{
-	padding:5px
+	width:30%;
+	padding:1%;
+	style:inline;
 }
