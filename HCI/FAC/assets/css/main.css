@@ -234,6 +234,7 @@ input, select, textarea {
 
 	.align-right {
 		text-align: right;
+		margin-right: 50px;
 	}
 
 /* Row */
