@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/dylanchapell1
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://dylanchapell.com
+  * I am dylanchapell1 (https://keybase.io/dylanchapell1) on keybase.
+  * I have a public key ASAFcBY5r8TqnHRYRgw1X1YtmCnvyPPBFucmE0a5Eh0NOQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120f9b65c0f5940e8cf1b5014e2956ed47c0337684b51f87c82b058f6226960c6750a",
+      "host": "keybase.io",
+      "kid": "012005701639afc4ea9c7458460c355f562d9829efc8f3c116e7261346b9121d0d390a",
+      "uid": "150064d27d2a0602e195195517538a19",
+      "username": "dylanchapell1"
+    },
+    "merkle_root": {
+      "ctime": 1694974063,
+      "hash": "02760a5715d0e9c9288c48b8c15fb3aa08d703fd52a7c6a5f65279071cdf2a3f955099937d4d838a25cd32d04fca308eced9e3815c5ca353396e9e412594e146",
+      "hash_meta": "25f3fbbe904d8ebd277ba0dfae99b071e15a2b7f6a306fc2c5c96ff7fa3adca8",
+      "seqno": 24930261
+    },
+    "service": {
+      "entropy": "07exeDYOzOk8NavLH0u2OLnU",
+      "hostname": "dylanchapell.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.2.1"
+  },
+  "ctime": 1694974075,
+  "expire_in": 504576000,
+  "prev": "9f69166672e4ed64d1655dde29cc295bbfa7f5e65d60bc3ddd35b7d1452bc7bc",
+  "seqno": 15,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgBXAWOa/E6px0WEYMNV9WLZgp78jzwRbnJhNGuRIdDTkKp3BheWxvYWTESpcCD8Qgn2kWZnLk7WTRZV3eKcwpW7+n9eZdYLw93TW30UUrx7zEIAhXH9xmTj64h7uORaRrQ6ol/ECtTm60cazivoF5kCi3AgHCo3NpZ8RAv3QRVlAlo1FOnOLdP6Hx2ibK6erZ6/alHSCtCQgEiLXOGhJCUnNSJrxlTgyVOvTl3kRqQtzlyKyPZ5FuW762AahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIN8TfHyESPzVsnR3Lg/BecaPxft2JJ9NF4Df4tryPCito3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dylanchapell1
+
+==================================================================
