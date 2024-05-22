@@ -1,0 +1,474 @@
+Already logging to plasmashell-4-00.txt.
+Continuing.
+[Thread 0xfffecf2eada0 (LWP 27629) exited]
+[Thread 0xfffecfb7eda0 (LWP 27628) exited]
+[Detaching after fork from child process 30017]
+[New Thread 0xfffecfb7eda0 (LWP 30040)]
+[New Thread 0xfffecf2eada0 (LWP 30041)]
+[New Thread 0xffff4484eda0 (LWP 30042)]
+[New Thread 0xffff6bffeda0 (LWP 30043)]
+[New Thread 0xffff515dada0 (LWP 30050)]
+[New Thread 0xffff5096eda0 (LWP 30051)]
+[New Thread 0xffff47ffeda0 (LWP 30052)]
+Downloading separate debug info for /lib64/libKF6NewStuffWidgets.so.6
+
+
+                                                                                                                                                                                                                                                                                                                                
+[New Thread 0xffff3fffeda0 (LWP 30392)]
+[New Thread 0xfffef49beda0 (LWP 30395)]
+[New Thread 0xfffee37eeda0 (LWP 30396)]
+
+Thread 1 "plasmashell" received signal SIGABRT, Aborted.
+__pthread_kill_implementation (threadid=281473355993504, signo=signo@entry=6, no_tid=no_tid@entry=0) at pthread_kill.c:44
+Downloading source file /usr/src/debug/glibc-2.39-13.fc40.aarch64/nptl/pthread_kill.c
+
+44	      return INTERNAL_SYSCALL_ERROR_P (ret) ? INTERNAL_SYSCALL_ERRNO (ret) : 0;
+
+Thread 37 (Thread 0xfffee37eeda0 (LWP 30396) "QSGRenderThread"):
+#0  0x0000ffff9c0d290c in __futex_abstimed_wait_common64 (private=0, futex_word=0xaaab5904150c, expected=0, op=393, abstime=0x0, cancel=true) at futex-internal.c:57
+#1  __futex_abstimed_wait_common (futex_word=0xaaab5904150c, expected=0, clockid=0, abstime=0x0, private=0, cancel=true) at futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0xaaab5904150c, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at futex-internal.c:139
+#3  0x0000ffff9c0d5974 [PAC] in __pthread_cond_wait_common (cond=0xaaab590414e0, mutex=0xaaab590414b0, clockid=0, abstime=0x0) at pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0xaaab590414e0, mutex=0xaaab590414b0) at pthread_cond_wait.c:618
+#5  0x0000ffff9c7e6194 [PAC] in QWaitConditionPrivate::wait (this=0xaaab590414b0, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:102
+#6  QWaitCondition::wait (this=this@entry=0xaaab590413d0, mutex=mutex@entry=0xaaab590413c8, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:180
+#7  0x0000ffff9e5fe144 [PAC] in QSGRenderThreadEventQueue::takeEvent (this=0xaaab590413b0, wait=true) at /usr/include/qt6/QtCore/qdeadlinetimer.h:31
+#8  QSGRenderThread::processEventsAndWaitForMore (this=this@entry=0xaaab59041310) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/scenegraph/qsgthreadedrenderloop.cpp:868
+#9  0x0000ffff9e5fe488 [PAC] in QSGRenderThread::run (this=0xaaab59041310) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/scenegraph/qsgthreadedrenderloop.cpp:991
+#10 0x0000ffff9c7d7db4 [PAC] in operator() (__closure=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:326
+#11 (anonymous namespace)::terminate_on_exception<QThreadPrivate::start(void*)::<lambda()> > (t=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:262
+#12 QThreadPrivate::start (arg=0xaaab59041310) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:285
+#13 0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xfffee37eeda0) at pthread_create.c:447
+#14 0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 36 (Thread 0xfffef49beda0 (LWP 30395) "QSGRenderThread"):
+#0  0x0000ffff9c0d290c in __futex_abstimed_wait_common64 (private=0, futex_word=0xaaab5993de38, expected=0, op=393, abstime=0x0, cancel=true) at futex-internal.c:57
+#1  __futex_abstimed_wait_common (futex_word=0xaaab5993de38, expected=0, clockid=0, abstime=0x0, private=0, cancel=true) at futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0xaaab5993de38, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at futex-internal.c:139
+#3  0x0000ffff9c0d5974 [PAC] in __pthread_cond_wait_common (cond=0xaaab5993de10, mutex=0xaaab5993dde0, clockid=0, abstime=0x0) at pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0xaaab5993de10, mutex=0xaaab5993dde0) at pthread_cond_wait.c:618
+#5  0x0000ffff9c7e6194 [PAC] in QWaitConditionPrivate::wait (this=0xaaab5993dde0, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:102
+#6  QWaitCondition::wait (this=this@entry=0xaaab59c1c620, mutex=mutex@entry=0xaaab59c1c618, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:180
+#7  0x0000ffff9e5fe144 [PAC] in QSGRenderThreadEventQueue::takeEvent (this=0xaaab59c1c600, wait=true) at /usr/include/qt6/QtCore/qdeadlinetimer.h:31
+#8  QSGRenderThread::processEventsAndWaitForMore (this=this@entry=0xaaab59c1c560) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/scenegraph/qsgthreadedrenderloop.cpp:868
+#9  0x0000ffff9e5fe488 [PAC] in QSGRenderThread::run (this=0xaaab59c1c560) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/scenegraph/qsgthreadedrenderloop.cpp:991
+#10 0x0000ffff9c7d7db4 [PAC] in operator() (__closure=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:326
+#11 (anonymous namespace)::terminate_on_exception<QThreadPrivate::start(void*)::<lambda()> > (t=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:262
+#12 QThreadPrivate::start (arg=0xaaab59c1c560) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:285
+#13 0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xfffef49beda0) at pthread_create.c:447
+#14 0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 35 (Thread 0xffff3fffeda0 (LWP 30392) "QSGRenderThread"):
+#0  0x0000ffff9c0d290c in __futex_abstimed_wait_common64 (private=0, futex_word=0xaaab5894be7c, expected=0, op=393, abstime=0x0, cancel=true) at futex-internal.c:57
+#1  __futex_abstimed_wait_common (futex_word=0xaaab5894be7c, expected=0, clockid=0, abstime=0x0, private=0, cancel=true) at futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0xaaab5894be7c, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at futex-internal.c:139
+#3  0x0000ffff9c0d5974 [PAC] in __pthread_cond_wait_common (cond=0xaaab5894be50, mutex=0xaaab5894be20, clockid=0, abstime=0x0) at pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0xaaab5894be50, mutex=0xaaab5894be20) at pthread_cond_wait.c:618
+#5  0x0000ffff9c7e6194 [PAC] in QWaitConditionPrivate::wait (this=0xaaab5894be20, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:102
+#6  QWaitCondition::wait (this=this@entry=0xaaab55bb9370, mutex=mutex@entry=0xaaab55bb9368, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:180
+#7  0x0000ffff9e5fe144 [PAC] in QSGRenderThreadEventQueue::takeEvent (this=0xaaab55bb9350, wait=true) at /usr/include/qt6/QtCore/qdeadlinetimer.h:31
+#8  QSGRenderThread::processEventsAndWaitForMore (this=this@entry=0xaaab55bb92b0) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/scenegraph/qsgthreadedrenderloop.cpp:868
+#9  0x0000ffff9e5fe488 [PAC] in QSGRenderThread::run (this=0xaaab55bb92b0) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/scenegraph/qsgthreadedrenderloop.cpp:991
+#10 0x0000ffff9c7d7db4 [PAC] in operator() (__closure=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:326
+#11 (anonymous namespace)::terminate_on_exception<QThreadPrivate::start(void*)::<lambda()> > (t=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:262
+#12 QThreadPrivate::start (arg=0xaaab55bb92b0) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:285
+#13 0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xffff3fffeda0) at pthread_create.c:447
+#14 0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 34 (Thread 0xffff5096eda0 (LWP 30381) "QSGRenderThread"):
+#0  0x0000ffff9c0d290c in __futex_abstimed_wait_common64 (private=0, futex_word=0xaaab58e9f31c, expected=0, op=393, abstime=0x0, cancel=true) at futex-internal.c:57
+#1  __futex_abstimed_wait_common (futex_word=0xaaab58e9f31c, expected=0, clockid=0, abstime=0x0, private=0, cancel=true) at futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0xaaab58e9f31c, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at futex-internal.c:139
+#3  0x0000ffff9c0d5974 [PAC] in __pthread_cond_wait_common (cond=0xaaab58e9f2f0, mutex=0xaaab58e9f2c0, clockid=0, abstime=0x0) at pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0xaaab58e9f2f0, mutex=0xaaab58e9f2c0) at pthread_cond_wait.c:618
+#5  0x0000ffff9c7e6194 [PAC] in QWaitConditionPrivate::wait (this=0xaaab58e9f2c0, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:102
+#6  QWaitCondition::wait (this=this@entry=0xaaab590fd190, mutex=mutex@entry=0xaaab590fd188, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:180
+#7  0x0000ffff9e5fe144 [PAC] in QSGRenderThreadEventQueue::takeEvent (this=0xaaab590fd170, wait=true) at /usr/include/qt6/QtCore/qdeadlinetimer.h:31
+#8  QSGRenderThread::processEventsAndWaitForMore (this=this@entry=0xaaab590fd0d0) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/scenegraph/qsgthreadedrenderloop.cpp:868
+#9  0x0000ffff9e5fe488 [PAC] in QSGRenderThread::run (this=0xaaab590fd0d0) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/scenegraph/qsgthreadedrenderloop.cpp:991
+#10 0x0000ffff9c7d7db4 [PAC] in operator() (__closure=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:326
+#11 (anonymous namespace)::terminate_on_exception<QThreadPrivate::start(void*)::<lambda()> > (t=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:262
+#12 QThreadPrivate::start (arg=0xaaab590fd0d0) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:285
+#13 0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xffff5096eda0) at pthread_create.c:447
+#14 0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 33 (Thread 0xffff214eeda0 (LWP 30380) "Thread (pooled)"):
+#0  0x0000ffff9c0d290c in __futex_abstimed_wait_common64 (private=0, futex_word=0xffff400037dc, expected=0, op=137, abstime=0xffff214ee370, cancel=true) at futex-internal.c:57
+#1  __futex_abstimed_wait_common (futex_word=0xffff400037dc, expected=0, clockid=0, abstime=0xffff214ee370, private=0, cancel=true) at futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0xffff400037dc, expected=expected@entry=0, clockid=clockid@entry=1, abstime=abstime@entry=0xffff214ee370, private=private@entry=0) at futex-internal.c:139
+#3  0x0000ffff9c0d5ca0 [PAC] in __pthread_cond_wait_common (cond=0xffff400037b0, mutex=0xffff40003780, clockid=1, abstime=0xffff214ee370) at pthread_cond_wait.c:503
+#4  ___pthread_cond_timedwait64 (cond=0xffff400037b0, mutex=0xffff40003780, abstime=0xffff214ee370) at pthread_cond_wait.c:643
+#5  0x0000ffff9c7e60f4 [PAC] in QWaitConditionPrivate::wait_relative (this=0xffff40003780, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:92
+#6  QWaitConditionPrivate::wait (this=0xffff40003780, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:100
+#7  QWaitCondition::wait (this=this@entry=0xffff40004fb0, mutex=mutex@entry=0xaaab56032498, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:180
+#8  0x0000ffff9c7e2c68 [PAC] in QThreadPoolThread::run (this=0xffff40004fa0) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthreadpool.cpp:116
+#9  0x0000ffff9c7d7db4 [PAC] in operator() (__closure=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:326
+#10 (anonymous namespace)::terminate_on_exception<QThreadPrivate::start(void*)::<lambda()> > (t=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:262
+#11 QThreadPrivate::start (arg=0xffff40004fa0) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:285
+#12 0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xffff214eeda0) at pthread_create.c:447
+#13 0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 32 (Thread 0xffff4484eda0 (LWP 30379) "Thread (pooled)"):
+#0  0x0000ffff9c0d290c in __futex_abstimed_wait_common64 (private=0, futex_word=0xaaab55ff47c8, expected=0, op=137, abstime=0xffff4484e370, cancel=true) at futex-internal.c:57
+#1  __futex_abstimed_wait_common (futex_word=0xaaab55ff47c8, expected=0, clockid=0, abstime=0xffff4484e370, private=0, cancel=true) at futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0xaaab55ff47c8, expected=expected@entry=0, clockid=clockid@entry=1, abstime=abstime@entry=0xffff4484e370, private=private@entry=0) at futex-internal.c:139
+#3  0x0000ffff9c0d5ca0 [PAC] in __pthread_cond_wait_common (cond=0xaaab55ff47a0, mutex=0xaaab55ff4770, clockid=1, abstime=0xffff4484e370) at pthread_cond_wait.c:503
+#4  ___pthread_cond_timedwait64 (cond=0xaaab55ff47a0, mutex=0xaaab55ff4770, abstime=0xffff4484e370) at pthread_cond_wait.c:643
+#5  0x0000ffff9c7e60f4 [PAC] in QWaitConditionPrivate::wait_relative (this=0xaaab55ff4770, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:92
+#6  QWaitConditionPrivate::wait (this=0xaaab55ff4770, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:100
+#7  QWaitCondition::wait (this=this@entry=0xaaab55ff5ec0, mutex=mutex@entry=0xaaab56032498, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:180
+#8  0x0000ffff9c7e2c68 [PAC] in QThreadPoolThread::run (this=0xaaab55ff5eb0) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthreadpool.cpp:116
+#9  0x0000ffff9c7d7db4 [PAC] in operator() (__closure=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:326
+#10 (anonymous namespace)::terminate_on_exception<QThreadPrivate::start(void*)::<lambda()> > (t=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:262
+#11 QThreadPrivate::start (arg=0xaaab55ff5eb0) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:285
+#12 0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xffff4484eda0) at pthread_create.c:447
+#13 0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 31 (Thread 0xffff4505eda0 (LWP 30378) "Thread (pooled)"):
+#0  0x0000ffff9c0d290c in __futex_abstimed_wait_common64 (private=0, futex_word=0xffff8000b7d8, expected=0, op=137, abstime=0xffff4505e370, cancel=true) at futex-internal.c:57
+#1  __futex_abstimed_wait_common (futex_word=0xffff8000b7d8, expected=0, clockid=0, abstime=0xffff4505e370, private=0, cancel=true) at futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0xffff8000b7d8, expected=expected@entry=0, clockid=clockid@entry=1, abstime=abstime@entry=0xffff4505e370, private=private@entry=0) at futex-internal.c:139
+#3  0x0000ffff9c0d5ca0 [PAC] in __pthread_cond_wait_common (cond=0xffff8000b7b0, mutex=0xffff8000b780, clockid=1, abstime=0xffff4505e370) at pthread_cond_wait.c:503
+#4  ___pthread_cond_timedwait64 (cond=0xffff8000b7b0, mutex=0xffff8000b780, abstime=0xffff4505e370) at pthread_cond_wait.c:643
+#5  0x0000ffff9c7e60f4 [PAC] in QWaitConditionPrivate::wait_relative (this=0xffff8000b780, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:92
+#6  QWaitConditionPrivate::wait (this=0xffff8000b780, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:100
+#7  QWaitCondition::wait (this=this@entry=0xaaab562a7e90, mutex=mutex@entry=0xaaab56032498, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:180
+#8  0x0000ffff9c7e2c68 [PAC] in QThreadPoolThread::run (this=0xaaab562a7e80) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthreadpool.cpp:116
+#9  0x0000ffff9c7d7db4 [PAC] in operator() (__closure=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:326
+#10 (anonymous namespace)::terminate_on_exception<QThreadPrivate::start(void*)::<lambda()> > (t=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:262
+#11 QThreadPrivate::start (arg=0xaaab562a7e80) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:285
+#12 0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xffff4505eda0) at pthread_create.c:447
+#13 0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 30 (Thread 0xffff47ffeda0 (LWP 30377) "Thread (pooled)"):
+#0  0x0000ffff9c0d290c in __futex_abstimed_wait_common64 (private=0, futex_word=0xffff4000336c, expected=0, op=137, abstime=0xffff47ffe370, cancel=true) at futex-internal.c:57
+#1  __futex_abstimed_wait_common (futex_word=0xffff4000336c, expected=0, clockid=0, abstime=0xffff47ffe370, private=0, cancel=true) at futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0xffff4000336c, expected=expected@entry=0, clockid=clockid@entry=1, abstime=abstime@entry=0xffff47ffe370, private=private@entry=0) at futex-internal.c:139
+#3  0x0000ffff9c0d5ca0 [PAC] in __pthread_cond_wait_common (cond=0xffff40003340, mutex=0xffff40003310, clockid=1, abstime=0xffff47ffe370) at pthread_cond_wait.c:503
+#4  ___pthread_cond_timedwait64 (cond=0xffff40003340, mutex=0xffff40003310, abstime=0xffff47ffe370) at pthread_cond_wait.c:643
+#5  0x0000ffff9c7e60f4 [PAC] in QWaitConditionPrivate::wait_relative (this=0xffff40003310, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:92
+#6  QWaitConditionPrivate::wait (this=0xffff40003310, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:100
+#7  QWaitCondition::wait (this=this@entry=0xffff400148f0, mutex=mutex@entry=0xaaab56032498, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:180
+#8  0x0000ffff9c7e2c68 [PAC] in QThreadPoolThread::run (this=0xffff400148e0) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthreadpool.cpp:116
+#9  0x0000ffff9c7d7db4 [PAC] in operator() (__closure=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:326
+#10 (anonymous namespace)::terminate_on_exception<QThreadPrivate::start(void*)::<lambda()> > (t=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:262
+#11 QThreadPrivate::start (arg=0xffff400148e0) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:285
+#12 0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xffff47ffeda0) at pthread_create.c:447
+#13 0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 29 (Thread 0xffff6bffeda0 (LWP 30376) "Thread (pooled)"):
+#0  0x0000ffff9c0d290c in __futex_abstimed_wait_common64 (private=0, futex_word=0xaaab55fe0ba8, expected=0, op=137, abstime=0xffff6bffe370, cancel=true) at futex-internal.c:57
+#1  __futex_abstimed_wait_common (futex_word=0xaaab55fe0ba8, expected=0, clockid=0, abstime=0xffff6bffe370, private=0, cancel=true) at futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0xaaab55fe0ba8, expected=expected@entry=0, clockid=clockid@entry=1, abstime=abstime@entry=0xffff6bffe370, private=private@entry=0) at futex-internal.c:139
+#3  0x0000ffff9c0d5ca0 [PAC] in __pthread_cond_wait_common (cond=0xaaab55fe0b80, mutex=0xaaab55fe0b50, clockid=1, abstime=0xffff6bffe370) at pthread_cond_wait.c:503
+#4  ___pthread_cond_timedwait64 (cond=0xaaab55fe0b80, mutex=0xaaab55fe0b50, abstime=0xffff6bffe370) at pthread_cond_wait.c:643
+#5  0x0000ffff9c7e60f4 [PAC] in QWaitConditionPrivate::wait_relative (this=0xaaab55fe0b50, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:92
+#6  QWaitConditionPrivate::wait (this=0xaaab55fe0b50, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:100
+#7  QWaitCondition::wait (this=this@entry=0xaaab5610f610, mutex=mutex@entry=0xaaab56032498, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:180
+#8  0x0000ffff9c7e2c68 [PAC] in QThreadPoolThread::run (this=0xaaab5610f600) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthreadpool.cpp:116
+#9  0x0000ffff9c7d7db4 [PAC] in operator() (__closure=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:326
+#10 (anonymous namespace)::terminate_on_exception<QThreadPrivate::start(void*)::<lambda()> > (t=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:262
+#11 QThreadPrivate::start (arg=0xaaab5610f600) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:285
+#12 0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xffff6bffeda0) at pthread_create.c:447
+#13 0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 28 (Thread 0xfffecf2eada0 (LWP 30375) "Thread (pooled)"):
+#0  0x0000ffff9c0d290c in __futex_abstimed_wait_common64 (private=0, futex_word=0xaaab55f68e98, expected=0, op=137, abstime=0xfffecf2ea370, cancel=true) at futex-internal.c:57
+#1  __futex_abstimed_wait_common (futex_word=0xaaab55f68e98, expected=0, clockid=1431590128, abstime=0xfffecf2ea370, private=0, cancel=true) at futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0xaaab55f68e98, expected=expected@entry=0, clockid=clockid@entry=1, abstime=abstime@entry=0xfffecf2ea370, private=private@entry=0) at futex-internal.c:139
+#3  0x0000ffff9c0d5ca0 [PAC] in __pthread_cond_wait_common (cond=0xaaab55f68e70, mutex=0xaaab55f68e40, clockid=1, abstime=0xfffecf2ea370) at pthread_cond_wait.c:503
+#4  ___pthread_cond_timedwait64 (cond=0xaaab55f68e70, mutex=0xaaab55f68e40, abstime=0xfffecf2ea370) at pthread_cond_wait.c:643
+#5  0x0000ffff9c7e60f4 [PAC] in QWaitConditionPrivate::wait_relative (this=0xaaab55f68e40, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:92
+#6  QWaitConditionPrivate::wait (this=0xaaab55f68e40, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:100
+#7  QWaitCondition::wait (this=this@entry=0xaaab55f68d10, mutex=mutex@entry=0xaaab56032498, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:180
+#8  0x0000ffff9c7e2c68 [PAC] in QThreadPoolThread::run (this=0xaaab55f68d00) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthreadpool.cpp:116
+#9  0x0000ffff9c7d7db4 [PAC] in operator() (__closure=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:326
+#10 (anonymous namespace)::terminate_on_exception<QThreadPrivate::start(void*)::<lambda()> > (t=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:262
+#11 QThreadPrivate::start (arg=0xaaab55f68d00) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:285
+#12 0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xfffecf2eada0) at pthread_create.c:447
+#13 0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 27 (Thread 0xffff515dada0 (LWP 30374) "Thread (pooled)"):
+#0  0x0000ffff9c0d290c in __futex_abstimed_wait_common64 (private=0, futex_word=0xffff4000c518, expected=0, op=137, abstime=0xffff515da370, cancel=true) at futex-internal.c:57
+#1  __futex_abstimed_wait_common (futex_word=0xffff4000c518, expected=0, clockid=0, abstime=0xffff515da370, private=0, cancel=true) at futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0xffff4000c518, expected=expected@entry=0, clockid=clockid@entry=1, abstime=abstime@entry=0xffff515da370, private=private@entry=0) at futex-internal.c:139
+#3  0x0000ffff9c0d5ca0 [PAC] in __pthread_cond_wait_common (cond=0xffff4000c4f0, mutex=0xffff4000c4c0, clockid=1, abstime=0xffff515da370) at pthread_cond_wait.c:503
+#4  ___pthread_cond_timedwait64 (cond=0xffff4000c4f0, mutex=0xffff4000c4c0, abstime=0xffff515da370) at pthread_cond_wait.c:643
+#5  0x0000ffff9c7e60f4 [PAC] in QWaitConditionPrivate::wait_relative (this=0xffff4000c4c0, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:92
+#6  QWaitConditionPrivate::wait (this=0xffff4000c4c0, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:100
+#7  QWaitCondition::wait (this=this@entry=0xffff40002540, mutex=mutex@entry=0xaaab56032498, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:180
+#8  0x0000ffff9c7e2c68 [PAC] in QThreadPoolThread::run (this=0xffff40002530) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthreadpool.cpp:116
+#9  0x0000ffff9c7d7db4 [PAC] in operator() (__closure=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:326
+#10 (anonymous namespace)::terminate_on_exception<QThreadPrivate::start(void*)::<lambda()> > (t=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:262
+#11 QThreadPrivate::start (arg=0xffff40002530) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:285
+#12 0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xffff515dada0) at pthread_create.c:447
+#13 0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 26 (Thread 0xfffecfb7eda0 (LWP 30373) "Thread (pooled)"):
+#0  0x0000ffff9c0d290c in __futex_abstimed_wait_common64 (private=0, futex_word=0xffff4000a56c, expected=0, op=137, abstime=0xfffecfb7e370, cancel=true) at futex-internal.c:57
+#1  __futex_abstimed_wait_common (futex_word=0xffff4000a56c, expected=0, clockid=1431590128, abstime=0xfffecfb7e370, private=0, cancel=true) at futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0xffff4000a56c, expected=expected@entry=0, clockid=clockid@entry=1, abstime=abstime@entry=0xfffecfb7e370, private=private@entry=0) at futex-internal.c:139
+#3  0x0000ffff9c0d5ca0 [PAC] in __pthread_cond_wait_common (cond=0xffff4000a540, mutex=0xffff4000a510, clockid=1, abstime=0xfffecfb7e370) at pthread_cond_wait.c:503
+#4  ___pthread_cond_timedwait64 (cond=0xffff4000a540, mutex=0xffff4000a510, abstime=0xfffecfb7e370) at pthread_cond_wait.c:643
+#5  0x0000ffff9c7e60f4 [PAC] in QWaitConditionPrivate::wait_relative (this=0xffff4000a510, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:92
+#6  QWaitConditionPrivate::wait (this=0xffff4000a510, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:100
+#7  QWaitCondition::wait (this=this@entry=0xffff4000a260, mutex=mutex@entry=0xaaab56032498, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:180
+#8  0x0000ffff9c7e2c68 [PAC] in QThreadPoolThread::run (this=0xffff4000a250) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthreadpool.cpp:116
+#9  0x0000ffff9c7d7db4 [PAC] in operator() (__closure=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:326
+#10 (anonymous namespace)::terminate_on_exception<QThreadPrivate::start(void*)::<lambda()> > (t=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:262
+#11 QThreadPrivate::start (arg=0xffff4000a250) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:285
+#12 0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xfffecfb7eda0) at pthread_create.c:447
+#13 0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 15 (Thread 0xffff2295ada0 (LWP 27818) "QSGRenderThread"):
+#0  0x0000ffff9c0d290c in __futex_abstimed_wait_common64 (private=0, futex_word=0xaaab57335158, expected=0, op=393, abstime=0x0, cancel=true) at futex-internal.c:57
+#1  __futex_abstimed_wait_common (futex_word=0xaaab57335158, expected=0, clockid=0, abstime=0x0, private=0, cancel=true) at futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0xaaab57335158, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at futex-internal.c:139
+#3  0x0000ffff9c0d5974 [PAC] in __pthread_cond_wait_common (cond=0xaaab57335130, mutex=0xaaab57335100, clockid=0, abstime=0x0) at pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0xaaab57335130, mutex=0xaaab57335100) at pthread_cond_wait.c:618
+#5  0x0000ffff9c7e6194 [PAC] in QWaitConditionPrivate::wait (this=0xaaab57335100, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:102
+#6  QWaitCondition::wait (this=this@entry=0xffff7400f760, mutex=mutex@entry=0xffff7400f758, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:180
+#7  0x0000ffff9e5fe144 [PAC] in QSGRenderThreadEventQueue::takeEvent (this=0xffff7400f740, wait=true) at /usr/include/qt6/QtCore/qdeadlinetimer.h:31
+#8  QSGRenderThread::processEventsAndWaitForMore (this=this@entry=0xffff7400f6a0) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/scenegraph/qsgthreadedrenderloop.cpp:868
+#9  0x0000ffff9e5fe488 [PAC] in QSGRenderThread::run (this=0xffff7400f6a0) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/scenegraph/qsgthreadedrenderloop.cpp:991
+#10 0x0000ffff9c7d7db4 [PAC] in operator() (__closure=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:326
+#11 (anonymous namespace)::terminate_on_exception<QThreadPrivate::start(void*)::<lambda()> > (t=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:262
+#12 QThreadPrivate::start (arg=0xffff7400f6a0) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:285
+#13 0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xffff2295ada0) at pthread_create.c:447
+#14 0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 12 (Thread 0xfffee916eda0 (LWP 27623) "QSGRenderThread"):
+#0  0x0000ffff9c0d290c in __futex_abstimed_wait_common64 (private=0, futex_word=0xaaab57a69208, expected=0, op=393, abstime=0x0, cancel=true) at futex-internal.c:57
+#1  __futex_abstimed_wait_common (futex_word=0xaaab57a69208, expected=0, clockid=0, abstime=0x0, private=0, cancel=true) at futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0xaaab57a69208, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at futex-internal.c:139
+#3  0x0000ffff9c0d5974 [PAC] in __pthread_cond_wait_common (cond=0xaaab57a691e0, mutex=0xaaab57a691b0, clockid=0, abstime=0x0) at pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0xaaab57a691e0, mutex=0xaaab57a691b0) at pthread_cond_wait.c:618
+#5  0x0000ffff9c7e6194 [PAC] in QWaitConditionPrivate::wait (this=0xaaab57a691b0, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:102
+#6  QWaitCondition::wait (this=this@entry=0xaaab570f4f20, mutex=mutex@entry=0xaaab570f4f18, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:180
+#7  0x0000ffff9e5fe144 [PAC] in QSGRenderThreadEventQueue::takeEvent (this=0xaaab570f4f00, wait=true) at /usr/include/qt6/QtCore/qdeadlinetimer.h:31
+#8  QSGRenderThread::processEventsAndWaitForMore (this=this@entry=0xaaab570f4e60) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/scenegraph/qsgthreadedrenderloop.cpp:868
+#9  0x0000ffff9e5fe488 [PAC] in QSGRenderThread::run (this=0xaaab570f4e60) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/scenegraph/qsgthreadedrenderloop.cpp:991
+#10 0x0000ffff9c7d7db4 [PAC] in operator() (__closure=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:326
+#11 (anonymous namespace)::terminate_on_exception<QThreadPrivate::start(void*)::<lambda()> > (t=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:262
+#12 QThreadPrivate::start (arg=0xaaab570f4e60) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:285
+#13 0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xfffee916eda0) at pthread_create.c:447
+#14 0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 11 (Thread 0xffff23ffeda0 (LWP 27604) "pw-data-loop"):
+#0  0x0000ffff9c141ed0 in __GI_epoll_pwait (epfd=59, events=events@entry=0xffff23ffe020, maxevents=<optimized out>, timeout=<optimized out>, set=set@entry=0x0) at ../sysdeps/unix/sysv/linux/epoll_pwait.c:40
+#1  0x0000ffff9c14205c [PAC] in epoll_wait (epfd=<optimized out>, events=events@entry=0xffff23ffe020, maxevents=<optimized out>, timeout=<optimized out>) at ../sysdeps/unix/sysv/linux/epoll_wait.c:32
+#2  0x0000ffff52d22304 in impl_pollfd_wait (object=<optimized out>, pfd=<optimized out>, ev=0xffff23ffe258, n_ev=<optimized out>, timeout=<optimized out>) at ../spa/plugins/support/system.c:137
+#3  0x0000ffff52d14ae4 [PAC] in loop_iterate (object=0xaaab5702f9a8, timeout=-1) at ../spa/plugins/support/loop.c:471
+#4  0x0000ffff52da29b0 [PAC] in do_loop (user_data=0xaaab5702f840) at ../src/pipewire/data-loop.c:65
+#5  0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xffff23ffeda0) at pthread_create.c:447
+#6  0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 10 (Thread 0xffff27ffeda0 (LWP 27602) "threaded-ml"):
+#0  0x0000ffff9c136014 in __GI___poll (fds=fds@entry=0xfffefc007200, nfds=nfds@entry=2, timeout=timeout@entry=-1) at ../sysdeps/unix/sysv/linux/poll.c:41
+#1  0x0000ffff3e2e8d94 [PAC] in poll (__timeout=-1, __nfds=2, __fds=0xfffefc007200) at /usr/include/bits/poll2.h:39
+#2  poll_func (ufds=0xfffefc007200, nfds=2, timeout=-1, userdata=0xaaab56ff36b0) at ../src/pulse/thread-mainloop.c:70
+#3  0x0000ffff3e2d1ac4 [PAC] in pa_mainloop_poll (m=m@entry=0xaaab56ffe350) at ../src/pulse/mainloop.c:863
+#4  0x0000ffff3e2dcc80 [PAC] in pa_mainloop_iterate (m=m@entry=0xaaab56ffe350, block=block@entry=1, retval=retval@entry=0x0) at ../src/pulse/mainloop.c:945
+#5  0x0000ffff3e2dcd54 [PAC] in pa_mainloop_run (m=0xaaab56ffe350, retval=0x0) at ../src/pulse/mainloop.c:963
+#6  0x0000ffff3e2ee290 [PAC] in thread (userdata=0xaaab56ff3920) at ../src/pulse/thread-mainloop.c:101
+#7  0x0000ffff3e25cc8c [PAC] in internal_thread_func (userdata=0xaaab56ffdb40) at ../src/pulsecore/thread-posix.c:81
+#8  0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xffff27ffeda0) at pthread_create.c:447
+#9  0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 9 (Thread 0xffff3f0deda0 (LWP 27600) "KCupsConnection"):
+#0  0x0000ffff9c136014 in __GI___poll (fds=0xaaab56f6f210, nfds=<optimized out>, timeout=<optimized out>) at ../sysdeps/unix/sysv/linux/poll.c:41
+#1  0x0000ffff9a755758 [PAC] in g_main_context_poll_unlocked (priority=2147483647, context=0xffff040008e0, timeout=<optimized out>, fds=0xaaab56f6f210, n_fds=1) at ../glib/gmain.c:4521
+#2  g_main_context_iterate_unlocked.isra.0 (context=context@entry=0xffff040008e0, block=block@entry=1, dispatch=dispatch@entry=1, self=<optimized out>) at ../glib/gmain.c:4212
+#3  0x0000ffff9a6f2084 [PAC] in g_main_context_iteration (context=0xffff040008e0, may_block=1) at ../glib/gmain.c:4282
+#4  0x0000ffff9c911818 [PAC] in QEventDispatcherGlib::processEvents (this=0xffff04000de0, flags=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/kernel/qeventdispatcher_glib.cpp:394
+#5  0x0000ffff9c61f9d4 [PAC] in QEventLoop::exec (this=this@entry=0xffff3f0de3e8, flags=flags@entry=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/global/qflags.h:34
+#6  0x0000ffff9c744c8c [PAC] in QThread::exec (this=this@entry=0xaaab56f6fa60) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/global/qflags.h:74
+#7  0x0000ffff3c85e02c [PAC] in KCupsConnection::run (this=0xaaab56f6fa60) at /usr/src/debug/plasma-print-manager-6.0.4-1.fc40.aarch64/src/libkcups/KCupsConnection.cpp:253
+#8  0x0000ffff9c7d7db4 [PAC] in operator() (__closure=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:326
+#9  (anonymous namespace)::terminate_on_exception<QThreadPrivate::start(void*)::<lambda()> > (t=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:262
+#10 QThreadPrivate::start (arg=0xaaab56f6fa60) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:285
+#11 0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xffff3f0deda0) at pthread_create.c:447
+#12 0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 8 (Thread 0xffff5da0eda0 (LWP 27426) "QSGRenderThread"):
+#0  0x0000ffff9c0d290c in __futex_abstimed_wait_common64 (private=0, futex_word=0xaaab562c7ad8, expected=0, op=393, abstime=0x0, cancel=true) at futex-internal.c:57
+#1  __futex_abstimed_wait_common (futex_word=0xaaab562c7ad8, expected=0, clockid=0, abstime=0x0, private=0, cancel=true) at futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0xaaab562c7ad8, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at futex-internal.c:139
+#3  0x0000ffff9c0d5974 [PAC] in __pthread_cond_wait_common (cond=0xaaab562c7ab0, mutex=0xaaab562c7a80, clockid=0, abstime=0x0) at pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0xaaab562c7ab0, mutex=0xaaab562c7a80) at pthread_cond_wait.c:618
+#5  0x0000ffff9c7e6194 [PAC] in QWaitConditionPrivate::wait (this=0xaaab562c7a80, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:102
+#6  QWaitCondition::wait (this=this@entry=0xaaab55fe40d0, mutex=mutex@entry=0xaaab55fe40c8, deadline=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qwaitcondition_unix.cpp:180
+#7  0x0000ffff9e5fe144 [PAC] in QSGRenderThreadEventQueue::takeEvent (this=0xaaab55fe40b0, wait=true) at /usr/include/qt6/QtCore/qdeadlinetimer.h:31
+#8  QSGRenderThread::processEventsAndWaitForMore (this=this@entry=0xaaab55fe4010) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/scenegraph/qsgthreadedrenderloop.cpp:868
+#9  0x0000ffff9e5fe488 [PAC] in QSGRenderThread::run (this=0xaaab55fe4010) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/scenegraph/qsgthreadedrenderloop.cpp:991
+#10 0x0000ffff9c7d7db4 [PAC] in operator() (__closure=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:326
+#11 (anonymous namespace)::terminate_on_exception<QThreadPrivate::start(void*)::<lambda()> > (t=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:262
+#12 QThreadPrivate::start (arg=0xaaab55fe4010) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:285
+#13 0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xffff5da0eda0) at pthread_create.c:447
+#14 0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 7 (Thread 0xffff5ea2eda0 (LWP 27420) "QQuickPixmapRea"):
+#0  0x0000ffff9c136014 in __GI___poll (fds=0xaaab55e93af0, nfds=<optimized out>, timeout=<optimized out>) at ../sysdeps/unix/sysv/linux/poll.c:41
+#1  0x0000ffff9a755758 [PAC] in g_main_context_poll_unlocked (priority=2147483647, context=0xffff48000c60, timeout=<optimized out>, fds=0xaaab55e93af0, n_fds=1) at ../glib/gmain.c:4521
+#2  g_main_context_iterate_unlocked.isra.0 (context=context@entry=0xffff48000c60, block=block@entry=1, dispatch=dispatch@entry=1, self=<optimized out>) at ../glib/gmain.c:4212
+#3  0x0000ffff9a6f2084 [PAC] in g_main_context_iteration (context=0xffff48000c60, may_block=1) at ../glib/gmain.c:4282
+#4  0x0000ffff9c911818 [PAC] in QEventDispatcherGlib::processEvents (this=0xffff48000b70, flags=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/kernel/qeventdispatcher_glib.cpp:394
+#5  0x0000ffff9c61f9d4 [PAC] in QEventLoop::exec (this=this@entry=0xffff5ea2e3f8, flags=flags@entry=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/global/qflags.h:34
+#6  0x0000ffff9c744c8c [PAC] in QThread::exec (this=this@entry=0xaaab55fa7130) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/global/qflags.h:74
+#7  0x0000ffff9e522028 [PAC] in QQuickPixmapReader::run (this=0xaaab55fa7130) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/util/qquickpixmapcache.cpp:1162
+#8  0x0000ffff9c7d7db4 [PAC] in operator() (__closure=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:326
+#9  (anonymous namespace)::terminate_on_exception<QThreadPrivate::start(void*)::<lambda()> > (t=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:262
+#10 QThreadPrivate::start (arg=0xaaab55fa7130) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:285
+#11 0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xffff5ea2eda0) at pthread_create.c:447
+#12 0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 6 (Thread 0xffff7e2deda0 (LWP 27281) "QQmlThread"):
+#0  0x0000ffff9c136014 in __GI___poll (fds=0xaaab55a0d5f0, nfds=<optimized out>, timeout=<optimized out>) at ../sysdeps/unix/sysv/linux/poll.c:41
+#1  0x0000ffff9a755758 [PAC] in g_main_context_poll_unlocked (priority=2147483647, context=0xffff60000c60, timeout=<optimized out>, fds=0xaaab55a0d5f0, n_fds=1) at ../glib/gmain.c:4521
+#2  g_main_context_iterate_unlocked.isra.0 (context=context@entry=0xffff60000c60, block=block@entry=1, dispatch=dispatch@entry=1, self=<optimized out>) at ../glib/gmain.c:4212
+#3  0x0000ffff9a6f2084 [PAC] in g_main_context_iteration (context=0xffff60000c60, may_block=1) at ../glib/gmain.c:4282
+#4  0x0000ffff9c911818 [PAC] in QEventDispatcherGlib::processEvents (this=0xffff60000b70, flags=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/kernel/qeventdispatcher_glib.cpp:394
+#5  0x0000ffff9c61f9d4 [PAC] in QEventLoop::exec (this=this@entry=0xffff7e2de458, flags=flags@entry=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/global/qflags.h:34
+#6  0x0000ffff9c744c8c [PAC] in QThread::exec (this=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/global/qflags.h:74
+#7  0x0000ffff9c7d7db4 [PAC] in operator() (__closure=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:326
+#8  (anonymous namespace)::terminate_on_exception<QThreadPrivate::start(void*)::<lambda()> > (t=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:262
+#9  QThreadPrivate::start (arg=0xaaab55da7320) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:285
+#10 0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xffff7e2deda0) at pthread_create.c:447
+#11 0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 5 (Thread 0xffff8559ada0 (LWP 27263) "plasmas:disk$0"):
+#0  0x0000ffff9c0d290c in __futex_abstimed_wait_common64 (private=0, futex_word=0xaaab556088a0, expected=0, op=393, abstime=0x0, cancel=true) at futex-internal.c:57
+#1  __futex_abstimed_wait_common (futex_word=0xaaab556088a0, expected=0, clockid=0, abstime=0x0, private=0, cancel=true) at futex-internal.c:87
+#2  __GI___futex_abstimed_wait_cancelable64 (futex_word=futex_word@entry=0xaaab556088a0, expected=expected@entry=0, clockid=clockid@entry=0, abstime=abstime@entry=0x0, private=private@entry=0) at futex-internal.c:139
+#3  0x0000ffff9c0d5974 [PAC] in __pthread_cond_wait_common (cond=0xaaab55608878, mutex=0xaaab55608840, clockid=0, abstime=0x0) at pthread_cond_wait.c:503
+#4  ___pthread_cond_wait (cond=0xaaab55608878, mutex=0xaaab55608840) at pthread_cond_wait.c:618
+#5  0x0000ffff7e43fcf0 [PAC] in cnd_wait () at /usr/lib64/dri/asahi_dri.so
+#6  0x0000ffff7e41db90 [PAC] in util_queue_thread_func () at /usr/lib64/dri/asahi_dri.so
+#7  0x0000ffff7e43fb80 [PAC] in impl_thrd_routine () at /usr/lib64/dri/asahi_dri.so
+#8  0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xffff8559ada0) at pthread_create.c:447
+#9  0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 4 (Thread 0xffff85ffeda0 (LWP 27259) "WaylandEventThr"):
+#0  0x0000ffff9c136014 in __GI___poll (fds=fds@entry=0xffff85ffe448, nfds=nfds@entry=2, timeout=timeout@entry=-1) at ../sysdeps/unix/sysv/linux/poll.c:41
+#1  0x0000ffff9d996da8 [PAC] in poll (__fds=0xffff85ffe448, __nfds=2, __timeout=-1) at /usr/include/bits/poll2.h:39
+#2  QtWaylandClient::EventThread::run (this=0xaaab555be7e0) at /usr/src/debug/qt6-qtwayland-6.7.0-1.fc40.aarch64/src/client/qwaylanddisplay.cpp:182
+#3  0x0000ffff9c7d7db4 [PAC] in operator() (__closure=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:326
+#4  (anonymous namespace)::terminate_on_exception<QThreadPrivate::start(void*)::<lambda()> > (t=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:262
+#5  QThreadPrivate::start (arg=0xaaab555be7e0) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:285
+#6  0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xffff85ffeda0) at pthread_create.c:447
+#7  0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 3 (Thread 0xffff94a4eda0 (LWP 27258) "WaylandEventThr"):
+#0  0x0000ffff9c136014 in __GI___poll (fds=fds@entry=0xffff94a4e448, nfds=nfds@entry=2, timeout=timeout@entry=-1) at ../sysdeps/unix/sysv/linux/poll.c:41
+#1  0x0000ffff9d996da8 [PAC] in poll (__fds=0xffff94a4e448, __nfds=2, __timeout=-1) at /usr/include/bits/poll2.h:39
+#2  QtWaylandClient::EventThread::run (this=0xaaab5558aa50) at /usr/src/debug/qt6-qtwayland-6.7.0-1.fc40.aarch64/src/client/qwaylanddisplay.cpp:182
+#3  0x0000ffff9c7d7db4 [PAC] in operator() (__closure=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:326
+#4  (anonymous namespace)::terminate_on_exception<QThreadPrivate::start(void*)::<lambda()> > (t=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:262
+#5  QThreadPrivate::start (arg=0xaaab5558aa50) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:285
+#6  0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xffff94a4eda0) at pthread_create.c:447
+#7  0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 2 (Thread 0xffff9596eda0 (LWP 27253) "QDBusConnection"):
+#0  0x0000ffff9c136014 in __GI___poll (fds=0xaaab5557b560, nfds=<optimized out>, timeout=<optimized out>) at ../sysdeps/unix/sysv/linux/poll.c:41
+#1  0x0000ffff9a755758 [PAC] in g_main_context_poll_unlocked (priority=2147483647, context=0xffff80000c80, timeout=<optimized out>, fds=0xaaab5557b560, n_fds=3) at ../glib/gmain.c:4521
+#2  g_main_context_iterate_unlocked.isra.0 (context=context@entry=0xffff80000c80, block=block@entry=1, dispatch=dispatch@entry=1, self=<optimized out>) at ../glib/gmain.c:4212
+#3  0x0000ffff9a6f2084 [PAC] in g_main_context_iteration (context=0xffff80000c80, may_block=1) at ../glib/gmain.c:4282
+#4  0x0000ffff9c911818 [PAC] in QEventDispatcherGlib::processEvents (this=0xffff80000b70, flags=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/kernel/qeventdispatcher_glib.cpp:394
+#5  0x0000ffff9c61f9d4 [PAC] in QEventLoop::exec (this=this@entry=0xffff9596e3f8, flags=flags@entry=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/global/qflags.h:34
+#6  0x0000ffff9c744c8c [PAC] in QThread::exec (this=this@entry=0xffff9d5c19a0 <QGlobalStatic<QtGlobalStatic::Holder<(anonymous namespace)::Q_QGS__q_manager> >::instance()::holder>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/global/qflags.h:74
+#7  0x0000ffff9d50d5d0 [PAC] in QDBusConnectionManager::run (this=0xffff9d5c19a0 <QGlobalStatic<QtGlobalStatic::Holder<(anonymous namespace)::Q_QGS__q_manager> >::instance()::holder>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/dbus/qdbusconnectionmanager.cpp:144
+#8  0x0000ffff9c7d7db4 [PAC] in operator() (__closure=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:326
+#9  (anonymous namespace)::terminate_on_exception<QThreadPrivate::start(void*)::<lambda()> > (t=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:262
+#10 QThreadPrivate::start (arg=0xffff9d5c19a0 <QGlobalStatic<QtGlobalStatic::Holder<(anonymous namespace)::Q_QGS__q_manager> >::instance()::holder>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/thread/qthread_unix.cpp:285
+#11 0x0000ffff9c0d67d8 [PAC] in start_thread (arg=0xffff9596eda0) at pthread_create.c:447
+#12 0x0000ffff9c141b8c [PAC] in thread_start () at ../sysdeps/unix/sysv/linux/aarch64/clone3.S:76
+
+Thread 1 (Thread 0xffff9f65d1a0 (LWP 27220) "plasmashell"):
+#0  __pthread_kill_implementation (threadid=281473355993504, signo=signo@entry=6, no_tid=no_tid@entry=0) at pthread_kill.c:44
+#1  0x0000ffff9c0d8650 [PAC] in __pthread_kill_internal (threadid=<optimized out>, signo=6) at pthread_kill.c:78
+#2  0x0000ffff9c085a00 in __GI_raise (sig=sig@entry=6) at ../sysdeps/posix/raise.c:26
+#3  0x0000ffff9c070288 [PAC] in __GI_abort () at abort.c:79
+#4  0x0000ffff9c2f20c8 [PAC] in std::__glibcxx_assert_fail (file=file@entry=0xffff9fa814e8 "/usr/include/c++/14/bits/stl_algo.h", line=line@entry=3625, function=function@entry=0xffff9fa81490 "constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&) [with _Tp = int]", condition=condition@entry=0xffff9fa81480 "!(__hi < __lo)") at ../../../../../libstdc++-v3/src/c++11/assert_fail.cc:41
+#5  0x0000ffff9fa36c70 [PAC] in std::clamp<int> (__val=<optimized out>, __lo=<optimized out>, __hi=<optimized out>) at /usr/include/c++/14/bits/stl_algo.h:3623
+#6  std::clamp<int> (__val=<optimized out>, __lo=<optimized out>, __hi=<optimized out>) at /usr/include/c++/14/bits/stl_algo.h:3623
+#7  PlasmaQuick::AppletPopup::updateSize (this=0xaaab59083160) at /usr/src/debug/libplasma-6.0.4-2.fc40.aarch64/src/plasmaquick/appletpopup.cpp:264
+#8  0x0000ffff9c6823c0 [PAC] in QtPrivate::QSlotObjectBase::call (this=0xaaab59b91350, r=<optimized out>, a=0xffffc67298a8) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/kernel/qobjectdefs_impl.h:469
+#9  doActivate<false> (sender=0xaaab58e7d930, signal_index=3, argv=0xffffc67298a8) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/kernel/qobject.cpp:4078
+#10 0x0000ffff9c6823c0 [PAC] in QtPrivate::QSlotObjectBase::call (this=0xaaab55c05780, r=<optimized out>, a=0xffffc6729988) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/kernel/qobjectdefs_impl.h:469
+#11 doActivate<false> (sender=0xaaab59206510, signal_index=28, argv=0xffffc6729988) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/kernel/qobject.cpp:4078
+#12 0x0000ffff9c6789dc [PAC] in QMetaObject::activate (sender=sender@entry=0xaaab59206510, m=m@entry=0xffff9e874590 <QQuickItem::staticMetaObject>, local_signal_index=local_signal_index@entry=25, argv=argv@entry=0x0) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/kernel/qobject.cpp:4138
+#13 0x0000ffff9e329748 in QQuickItem::implicitWidthChanged (this=this@entry=0xaaab59206510) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/redhat-linux-build/src/quick/Quick_autogen/include/moc_qquickitem.cpp:1485
+#14 0x0000ffff9e334ee8 in QQuickItemPrivate::implicitWidthChanged (this=0xaaab5a1cb7e0) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/items/qquickitem.cpp:7324
+#15 QQuickItem::setImplicitWidth (this=0xaaab59206510, w=126) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/items/qquickitem.cpp:7435
+#16 0x0000ffff9ddbd55c [PAC] in QQmlPropertyData::writeProperty (this=<optimized out>, target=<optimized out>, value=<optimized out>, flags=...) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/qml/qqmlpropertydata_p.h:336
+#17 GenericBinding<6>::doStore<double> (this=<optimized out>, value=126, pd=<optimized out>, flags=...) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/qml/qqmlbinding.cpp:275
+#18 GenericBinding<6>::write (this=0xaaab59146010, result=..., isUndefined=false, flags=...) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/qml/qqmlbinding.cpp:248
+#19 0x0000ffff9ddb67c0 [PAC] in QQmlBinding::doUpdate (this=0xaaab59146010, watcher=..., flags=..., scope=...) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/qml/qqmlbinding.cpp:701
+#20 0x0000ffff9ddb9d4c [PAC] in QQmlBinding::update (this=0xaaab59146010, flags=...) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/qml/qqmlbinding.cpp:164
+#21 0x0000ffff9de4f53c [PAC] in QQmlNotifier::emitNotify (endpoint=<optimized out>, a=0x0) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/qml/qqmlnotifier.cpp:70
+#22 0x0000ffff9c682068 [PAC] in doActivate<false> (sender=0xaaab58bb44c0, signal_index=46, argv=argv@entry=0x0) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/kernel/qobject.cpp:3970
+#23 0x0000ffff9c678f10 [PAC] in QMetaObject::activate (sender=<optimized out>, signalOffset=<optimized out>, local_signal_index=<optimized out>, argv=argv@entry=0x0) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/kernel/qobject.cpp:4151
+#24 0x0000ffff9df0bbe0 in QQmlVMEMetaObject::activate (this=this@entry=0xaaab5a215850, object=<optimized out>, index=<optimized out>, args=args@entry=0x0) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/qml/qqmlvmemetaobject.cpp:1467
+#25 0x0000ffff9df0dee4 in QQmlVMEMetaObject::metaCall (this=0xaaab5a215850, o=<optimized out>, c=<optimized out>, _id=<optimized out>, a=<optimized out>) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/qml/qqmlvmemetaobject.cpp:1021
+#26 0x0000ffff9c627158 [PAC] in QMetaProperty::write (this=0xffffc672b890, object=0xaaab58bb44c0, v=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/kernel/qmetaobject.cpp:3811
+#27 0x0000ffff9c67fe0c [PAC] in QObject::doSetProperty (this=this@entry=0xaaab58bb44c0, name=<optimized out>, name@entry=0xffff9fa80db8 "fullRepresentation", lvalue=lvalue@entry=0xffffc672b998, rvalue=rvalue@entry=0xffffc672b998) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/kernel/qobject.cpp:4275
+#28 0x0000ffff9fa2a654 [PAC] in QObject::setProperty (this=0xaaab58bb44c0, name=0xffff9fa80db8 "fullRepresentation", value=...) at /usr/include/qt6/QtCore/qobject.h:402
+#29 PlasmaQuick::AppletQuickItemPrivate::preloadForExpansion (this=0xaaab584a67e0) at /usr/src/debug/libplasma-6.0.4-2.fc40.aarch64/src/plasmaquick/appletquickitem.cpp:300
+#30 0x0000ffff9fa2a964 [PAC] in PlasmaQuick::AppletQuickItem::setExpanded (this=this@entry=0xaaab5a64cce0, expanded=<optimized out>) at /usr/src/debug/libplasma-6.0.4-2.fc40.aarch64/src/plasmaquick/appletquickitem.cpp:841
+#31 0x0000ffff9fa2bc64 [PAC] in PlasmaQuick::AppletQuickItem::qt_static_metacall (_o=_o@entry=0xaaab5a64cce0, _c=_c@entry=QMetaObject::WriteProperty, _id=_id@entry=8, _a=_a@entry=0xffffc672bb50) at /usr/src/debug/libplasma-6.0.4-2.fc40.aarch64/redhat-linux-build/src/plasmaquick/PlasmaQuick_autogen/include/moc_appletquickitem.cpp:417
+#32 0x0000ffff9fa2e054 in PlasmaQuick::AppletQuickItem::qt_metacall (this=0xaaab5a64cce0, _c=QMetaObject::WriteProperty, _id=8, _a=0xffffc672bb50) at /usr/src/debug/libplasma-6.0.4-2.fc40.aarch64/redhat-linux-build/src/plasmaquick/PlasmaQuick_autogen/include/moc_appletquickitem.cpp:456
+#33 0x0000ffff9fa5abf4 [PAC] in PlasmoidItem::qt_metacall (this=0xaaab5a64cce0, _c=QMetaObject::WriteProperty, _id=<optimized out>, _a=0xffffc672bb50) at /usr/src/debug/libplasma-6.0.4-2.fc40.aarch64/redhat-linux-build/src/plasmaquick/PlasmaQuick_autogen/include/moc_plasmoiditem.cpp:352
+#34 0x0000ffff9de71dfc [PAC] in QQmlPropertyData::doMetacall<(QMetaObject::Call)2> (this=<optimized out>, object=0xaaab5a64cce0, idx=<optimized out>, argv=0xffffc672bb50) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/qml/qqmlpropertydata_p.h:360
+#35 QQmlPropertyData::doMetacall<(QMetaObject::Call)2> (this=0xffff602921e0, object=0xaaab5a64cce0, idx=<optimized out>, argv=0xffffc672bb50) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/qml/qqmlpropertydata_p.h:355
+#36 QQmlPropertyData::writeProperty (this=this@entry=0xffff602921e0, target=target@entry=0xaaab5a64cce0, value=<optimized out>, Python Exception <class 'gdb.MemoryError'>: Cannot access memory at address 0x1
+#37 0x0000ffff9de77690 [PAC] in QQmlPropertyPrivate::write (object=object@entry=0xaaab5a64cce0, property=..., value=..., context=..., flags=flags@entry=...) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/qml/qqmlproperty.cpp:1501
+#38 0x0000ffff9dd069d8 [PAC] in QV4::QObjectWrapper::setProperty (engine=engine@entry=0xaaab55b1bf50, object=<optimized out>, object@entry=0xaaab5a64cce0, property=0xffff602921e0, value=...) at /usr/include/qt6/QtCore/qflags.h:73
+#39 0x0000ffff9dd070b0 [PAC] in QV4::QObjectWrapper::setQmlProperty (engine=engine@entry=0xaaab55b1bf50, qmlContext=..., object=0xaaab5a64cce0, name=<optimized out>, flags=flags@entry=..., value=...) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/jsruntime/qv4qobjectwrapper.cpp:567
+#40 0x0000ffff9dd072ac [PAC] in QV4::QObjectWrapper::virtualPut (m=0xffff8412c538, id=..., value=..., receiver=0xffff8412c538) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/jsruntime/qv4qobjectwrapper.cpp:939
+#41 0x0000ffff9dce11c8 [PAC] in QV4::Object::put (this=0xffff8412c538, id=..., v=..., receiver=0xffff8412c538) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/jsruntime/qv4object_p.h:41
+#42 QV4::Object::virtualResolveLookupSetter (object=0xffff8412c538, engine=0xaaab55b1bf50, lookup=0xaaab58ce1f00, value=...) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/jsruntime/qv4object.cpp:817
+#43 0x0000ffff9dd66680 [PAC] in QV4::Moth::VME::interpret (frame=0xffffc672c360, engine=0xaaab55b1bf50, code=0xffff7c36886f "\032\b\006\324\026\006\002") at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/jsruntime/qv4vme_moth.cpp:321
+#44 0x0000ffff9dd6c358 [PAC] in QV4::Moth::VME::exec (frame=frame@entry=0xffffc672c360, engine=engine@entry=0xaaab55b1bf50) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/jsruntime/qv4vme_moth.cpp:487
+#45 0x0000ffff9dcb6ed8 [PAC] in QV4::doCall (self=self@entry=0xaaab58f3e9d0, thisObject=thisObject@entry=0xf00000001, argv=argv@entry=0xffff8412c4f0, argc=argc@entry=1, context=context@entry=0xffff19afc9d8) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/jsruntime/qv4function.cpp:54
+#46 0x0000ffff9dcb74b8 [PAC] in QV4::Function::call (this=this@entry=0xaaab58f3e9d0, thisObject=0xf00000001, thisObject@entry=0xffff8412c4f8, argv=argv@entry=0xffff8412c4f0, argc=argc@entry=1, context=context@entry=0xffff19afc9d8) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/jsruntime/qv4function.cpp:79
+#47 0x0000ffff9dcb77d8 in operator() (__closure=<synthetic pointer>, thisObject=0xffff8412c4f8, argv=0xffff8412c4f0, argc=1) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/jsruntime/qv4function.cpp:30
+#48 QV4::convertAndCall<QV4::Function::call(QObject*, void**, const QMetaType*, int, QV4::ExecutionContext*)::<lambda(const QV4::Value*, const QV4::Value*, int)> > (engine=<optimized out>, thisObject=0xaaab58db38b0, a=0xffffc672e0e8, types=0xffffc672c628, argc=1, call=...) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/jsruntime/qv4jscall_p.h:194
+#49 QV4::Function::call (this=0xaaab58f3e9d0, thisObject=0xaaab58db38b0, a=a@entry=0xffffc672e0e8, types=0xffffc672c628, argc=1, context=0xffff19afc9d8) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/jsruntime/qv4function.cpp:27
+#50 0x0000ffff9de23c40 [PAC] in QQmlJavaScriptExpression::evaluate (this=this@entry=0xaaab58f6d200, a=a@entry=0xffffc672e0e8, types=<optimized out>, argc=argc@entry=1) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/jsruntime/qv4persistent_p.h:90
+#51 0x0000ffff9ddc3eb8 [PAC] in QQmlBoundSignalExpression::evaluate (this=0xaaab58f6d200, a=a@entry=0xffffc672e0e8) at /usr/include/qt6/QtCore/qvarlengtharray.h:85
+#52 0x0000ffff9ddc4890 [PAC] in QQmlBoundSignal_callback (e=0xaaab590fb310, a=0xffffc672e0e8) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/qml/ftw/qqmlrefcount_p.h:73
+#53 0x0000ffff9de4f53c [PAC] in QQmlNotifier::emitNotify (endpoint=<optimized out>, a=0xffffc672e0e8) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/qml/qml/qqmlnotifier.cpp:70
+#54 0x0000ffff9c682068 [PAC] in doActivate<false> (sender=0xaaab58db38b0, signal_index=49, argv=0xffffc672e0e8) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/kernel/qobject.cpp:3970
+#55 0x0000ffff9c6789dc [PAC] in QMetaObject::activate (sender=sender@entry=0xaaab58db38b0, m=m@entry=0xffff9e8757a8 <QQuickMouseArea::staticMetaObject>, local_signal_index=local_signal_index@entry=16, argv=argv@entry=0xffffc672e0e8) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/kernel/qobject.cpp:4138
+#56 0x0000ffff9e3675e4 in QQuickMouseArea::clicked (this=this@entry=0xaaab58db38b0, _t1=<optimized out>, _t1@entry=0xaaab57d462d8) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/redhat-linux-build/src/quick/Quick_autogen/include/moc_qquickmousearea_p.cpp:701
+#57 0x0000ffff9e36922c [PAC] in QQuickMouseArea::setPressed (this=this@entry=0xaaab58db38b0, button=button@entry=Qt::LeftButton, p=p@entry=false, source=Qt::MouseEventNotSynthesized) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/items/qquickmousearea.cpp:1279
+#58 0x0000ffff9e36a38c [PAC] in QQuickMouseArea::mouseReleaseEvent (this=0xaaab58db38b0, event=0xffffc672ecb0) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/items/qquickmousearea.cpp:765
+#59 0x0000ffff9e34a740 [PAC] in QQuickItemPrivate::deliverPointerEvent (this=this@entry=0xaaab57d460e0, event=event@entry=0xffffc672ecb0) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/items/qquickitem.cpp:5641
+#60 0x0000ffff9e34a8b8 [PAC] in QQuickItem::event (this=0xaaab58db38b0, ev=0xffffc672ecb0) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/items/qquickitem.cpp:9027
+#61 0x0000ffff9eace9f8 [PAC] in QApplicationPrivate::notify_helper (this=<optimized out>, receiver=0xaaab58db38b0, e=0xffffc672ecb0) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/widgets/kernel/qapplication.cpp:3287
+#62 0x0000ffff9c6120b8 [PAC] in QCoreApplication::notifyInternal2 (receiver=receiver@entry=0xaaab58db38b0, event=event@entry=0xffffc672ecb0) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/kernel/qcoreapplication.cpp:1134
+#63 0x0000ffff9c6123dc [PAC] in QCoreApplication::sendEvent (receiver=receiver@entry=0xaaab58db38b0, event=event@entry=0xffffc672ecb0) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/kernel/qcoreapplication.cpp:1575
+#64 0x0000ffff9e5048b4 in QQuickDeliveryAgentPrivate::deliverMatchingPointsToItem (this=this@entry=0xaaab55f76330, item=item@entry=0xaaab58db38b0, isGrabber=isGrabber@entry=true, pointerEvent=pointerEvent@entry=0xffffc672ecb0, handlersOnly=handlersOnly@entry=false) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/util/qquickdeliveryagent.cpp:2305
+#65 0x0000ffff9e5058a8 [PAC] in QQuickDeliveryAgentPrivate::deliverUpdatedPoints (this=this@entry=0xaaab55f76330, event=event@entry=0xffffc672ecb0) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/util/qquickdeliveryagent.cpp:2090
+#66 0x0000ffff9e50686c [PAC] in QQuickDeliveryAgentPrivate::deliverPointerEvent (this=this@entry=0xaaab55f76330, event=event@entry=0xffffc672ecb0) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/util/qquickdeliveryagent.cpp:1930
+#67 0x0000ffff9e507b58 [PAC] in QQuickDeliveryAgentPrivate::handleMouseEvent (this=this@entry=0xaaab55f76330, event=event@entry=0xffffc672ecb0) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/util/qquickdeliveryagent.cpp:1663
+#68 0x0000ffff9e509154 [PAC] in QQuickDeliveryAgent::event (this=<optimized out>, ev=0xffffc672ecb0) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/util/qquickdeliveryagent.cpp:726
+#69 0x0000ffff9e3f8bec [PAC] in QQuickWindow::event (this=<optimized out>, event=<optimized out>) at /usr/src/debug/qt6-qtdeclarative-6.7.0-2.fc40.aarch64/src/quick/items/qquickwindow.cpp:1530
+#70 0x0000ffff9eace9f8 [PAC] in QApplicationPrivate::notify_helper (this=<optimized out>, receiver=0xaaab55f8ade0, e=0xffffc672ecb0) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/widgets/kernel/qapplication.cpp:3287
+#71 0x0000ffff9c6120b8 [PAC] in QCoreApplication::notifyInternal2 (receiver=receiver@entry=0xaaab55f8ade0, event=event@entry=0xffffc672ecb0) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/kernel/qcoreapplication.cpp:1134
+#72 0x0000ffff9c612400 [PAC] in QCoreApplication::sendSpontaneousEvent (receiver=receiver@entry=0xaaab55f8ade0, event=event@entry=0xffffc672ecb0) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/kernel/qcoreapplication.cpp:1589
+#73 0x0000ffff9cd63b58 in QGuiApplicationPrivate::processMouseEvent (e=0xaaab5674dc30) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/gui/kernel/qguiapplication.cpp:2327
+#74 0x0000ffff9cdd2544 [PAC] in QWindowSystemInterface::sendWindowSystemEvents (flags=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/gui/kernel/qwindowsysteminterface.cpp:1114
+#75 0x0000ffff9d263118 [PAC] in userEventSourceDispatch (source=<optimized out>) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/gui/platform/unix/qeventdispatcher_glib.cpp:38
+#76 0x0000ffff9a6f09b4 [PAC] in g_main_dispatch (context=0xffff80000f00) at ../glib/gmain.c:3344
+#77 g_main_context_dispatch_unlocked (context=0xffff80000f00) at ../glib/gmain.c:4152
+#78 0x0000ffff9a7557a4 [PAC] in g_main_context_iterate_unlocked.isra.0 (context=context@entry=0xffff80000f00, block=block@entry=1, dispatch=dispatch@entry=1, self=<optimized out>) at ../glib/gmain.c:4217
+#79 0x0000ffff9a6f2084 [PAC] in g_main_context_iteration (context=0xffff80000f00, may_block=1) at ../glib/gmain.c:4282
+#80 0x0000ffff9c911818 [PAC] in QEventDispatcherGlib::processEvents (this=0xaaab55587fd0, flags=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/kernel/qeventdispatcher_glib.cpp:394
+#81 0x0000ffff9c61f9d4 [PAC] in QEventLoop::exec (this=this@entry=0xffffc672f130, flags=flags@entry=...) at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/global/qflags.h:34
+#82 0x0000ffff9c61af7c [PAC] in QCoreApplication::exec () at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/corelib/global/qflags.h:74
+#83 0x0000ffff9cd54890 [PAC] in QGuiApplication::exec () at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/gui/kernel/qguiapplication.cpp:1926
+#84 0x0000ffff9eace998 in QApplication::exec () at /usr/src/debug/qt6-qtbase-6.7.0-5.fc40.aarch64/src/widgets/kernel/qapplication.cpp:2555
+#85 0x0000aaab4f876bc8 in main (argc=<optimized out>, argv=<optimized out>) at /usr/src/debug/plasma-workspace-6.0.4-1.fc40.aarch64/shell/main.cpp:214
+Detaching from program: /usr/bin/plasmashell, process 27220
+[Inferior 1 (process 27220) detached]

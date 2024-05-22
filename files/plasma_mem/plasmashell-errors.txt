@@ -1,0 +1,222 @@
+kf.plasma.quick: Applet preload policy set to 1
+file:///usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/main.qml:196:25: QML FolderViewDropArea (parent or ancestor of QQuickLayoutAttached): Binding loop detected for property "minimumWidth"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+qml: SystemTray ItemLoader: Invalid state, cannot determine source!
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/CompactRepresentation.qml:22:1: QML CompactRepresentation: Binding loop detected for property "implicitHeight"
+qt.dbus.integration: Could not connect "org.cups.cupsd.Notifier" to PrinterFinishingsChanged(QString, QString, QString, uint, QString, bool) : 
+QFont::setPointSizeF: Point size <= 0 (0.000000), must be greater than 0
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250871471: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250871471: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250871471: Unsupported image format
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/FullRepresentation.qml:21:1: QML FullRepresentation: Binding loop detected for property "implicitHeight"
+/usr/include/c++/14/bits/stl_algo.h:3625: constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&) [with _Tp = int]: Assertion '!(__hi < __lo)' failed.
+KCrash: Attempting to start /usr/bin/plasmashell
+KCrash: Application 'plasmashell' crashing... crashRecursionCounter = 2
+kf.plasma.quick: Applet preload policy set to 1
+file:///usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/main.qml:196:25: QML FolderViewDropArea (parent or ancestor of QQuickLayoutAttached): Binding loop detected for property "minimumWidth"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+qml: SystemTray ItemLoader: Invalid state, cannot determine source!
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/CompactRepresentation.qml:22:1: QML CompactRepresentation: Binding loop detected for property "implicitHeight"
+qt.dbus.integration: Could not connect "org.cups.cupsd.Notifier" to PrinterFinishingsChanged(QString, QString, QString, uint, QString, bool) : 
+QFont::setPointSizeF: Point size <= 0 (0.000000), must be greater than 0
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250874911: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250874911: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250874911: Unsupported image format
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/FullRepresentation.qml:21:1: QML FullRepresentation: Binding loop detected for property "implicitHeight"
+/usr/include/c++/14/bits/stl_algo.h:3625: constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&) [with _Tp = int]: Assertion '!(__hi < __lo)' failed.
+KCrash: Attempting to start /usr/bin/plasmashell
+KCrash: Application 'plasmashell' crashing... crashRecursionCounter = 2
+kf.plasma.quick: Applet preload policy set to 1
+file:///usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/main.qml:196:25: QML FolderViewDropArea (parent or ancestor of QQuickLayoutAttached): Binding loop detected for property "minimumWidth"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+qml: SystemTray ItemLoader: Invalid state, cannot determine source!
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/CompactRepresentation.qml:22:1: QML CompactRepresentation: Binding loop detected for property "implicitHeight"
+qt.dbus.integration: Could not connect "org.cups.cupsd.Notifier" to PrinterFinishingsChanged(QString, QString, QString, uint, QString, bool) : 
+QFont::setPointSizeF: Point size <= 0 (0.000000), must be greater than 0
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250878188: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250878188: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250878188: Unsupported image format
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/FullRepresentation.qml:21:1: QML FullRepresentation: Binding loop detected for property "implicitHeight"
+/usr/include/c++/14/bits/stl_algo.h:3625: constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&) [with _Tp = int]: Assertion '!(__hi < __lo)' failed.
+KCrash: Attempting to start /usr/bin/plasmashell
+KCrash: Application 'plasmashell' crashing... crashRecursionCounter = 2
+kf.plasma.quick: Applet preload policy set to 1
+file:///usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/main.qml:196:25: QML FolderViewDropArea (parent or ancestor of QQuickLayoutAttached): Binding loop detected for property "minimumWidth"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+qml: SystemTray ItemLoader: Invalid state, cannot determine source!
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/CompactRepresentation.qml:22:1: QML CompactRepresentation: Binding loop detected for property "implicitHeight"
+qt.dbus.integration: Could not connect "org.cups.cupsd.Notifier" to PrinterFinishingsChanged(QString, QString, QString, uint, QString, bool) : 
+QFont::setPointSizeF: Point size <= 0 (0.000000), must be greater than 0
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250881128: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250881128: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250881128: Unsupported image format
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/FullRepresentation.qml:21:1: QML FullRepresentation: Binding loop detected for property "implicitHeight"
+/usr/include/c++/14/bits/stl_algo.h:3625: constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&) [with _Tp = int]: Assertion '!(__hi < __lo)' failed.
+KCrash: Attempting to start /usr/bin/plasmashell
+KCrash: Application 'plasmashell' crashing... crashRecursionCounter = 2
+kf.plasma.quick: Applet preload policy set to 1
+file:///usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/main.qml:196:25: QML FolderViewDropArea (parent or ancestor of QQuickLayoutAttached): Binding loop detected for property "minimumWidth"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+qml: SystemTray ItemLoader: Invalid state, cannot determine source!
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/CompactRepresentation.qml:22:1: QML CompactRepresentation: Binding loop detected for property "implicitHeight"
+qt.dbus.integration: Could not connect "org.cups.cupsd.Notifier" to PrinterFinishingsChanged(QString, QString, QString, uint, QString, bool) : 
+QFont::setPointSizeF: Point size <= 0 (0.000000), must be greater than 0
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250884555: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250884555: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250884555: Unsupported image format
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/FullRepresentation.qml:21:1: QML FullRepresentation: Binding loop detected for property "implicitHeight"
+/usr/include/c++/14/bits/stl_algo.h:3625: constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&) [with _Tp = int]: Assertion '!(__hi < __lo)' failed.
+KCrash: Attempting to start /usr/bin/plasmashell
+KCrash: Application 'plasmashell' crashing... crashRecursionCounter = 2
+kf.plasma.quick: Applet preload policy set to 1
+file:///usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/main.qml:196:25: QML FolderViewDropArea (parent or ancestor of QQuickLayoutAttached): Binding loop detected for property "minimumWidth"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+qml: SystemTray ItemLoader: Invalid state, cannot determine source!
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/CompactRepresentation.qml:22:1: QML CompactRepresentation: Binding loop detected for property "implicitHeight"
+qt.dbus.integration: Could not connect "org.cups.cupsd.Notifier" to PrinterFinishingsChanged(QString, QString, QString, uint, QString, bool) : 
+QFont::setPointSizeF: Point size <= 0 (0.000000), must be greater than 0
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250888178: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250888178: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250888178: Unsupported image format
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/FullRepresentation.qml:21:1: QML FullRepresentation: Binding loop detected for property "implicitHeight"
+/usr/include/c++/14/bits/stl_algo.h:3625: constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&) [with _Tp = int]: Assertion '!(__hi < __lo)' failed.
+KCrash: Attempting to start /usr/bin/plasmashell
+KCrash: Application 'plasmashell' crashing... crashRecursionCounter = 2
+kf.plasma.quick: Applet preload policy set to 1
+file:///usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/main.qml:196:25: QML FolderViewDropArea (parent or ancestor of QQuickLayoutAttached): Binding loop detected for property "minimumWidth"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+qml: SystemTray ItemLoader: Invalid state, cannot determine source!
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/CompactRepresentation.qml:22:1: QML CompactRepresentation: Binding loop detected for property "implicitHeight"
+qt.dbus.integration: Could not connect "org.cups.cupsd.Notifier" to PrinterFinishingsChanged(QString, QString, QString, uint, QString, bool) : 
+QFont::setPointSizeF: Point size <= 0 (0.000000), must be greater than 0
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250890986: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250890986: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250890986: Unsupported image format
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/FullRepresentation.qml:21:1: QML FullRepresentation: Binding loop detected for property "implicitHeight"
+/usr/include/c++/14/bits/stl_algo.h:3625: constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&) [with _Tp = int]: Assertion '!(__hi < __lo)' failed.
+KCrash: Attempting to start /usr/bin/plasmashell
+KCrash: Application 'plasmashell' crashing... crashRecursionCounter = 2
+kf.plasma.quick: Applet preload policy set to 1
+file:///usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/main.qml:196:25: QML FolderViewDropArea (parent or ancestor of QQuickLayoutAttached): Binding loop detected for property "minimumWidth"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+qml: SystemTray ItemLoader: Invalid state, cannot determine source!
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/CompactRepresentation.qml:22:1: QML CompactRepresentation: Binding loop detected for property "implicitHeight"
+qt.dbus.integration: Could not connect "org.cups.cupsd.Notifier" to PrinterFinishingsChanged(QString, QString, QString, uint, QString, bool) : 
+QFont::setPointSizeF: Point size <= 0 (0.000000), must be greater than 0
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250893919: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250893919: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250893919: Unsupported image format
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/FullRepresentation.qml:21:1: QML FullRepresentation: Binding loop detected for property "implicitHeight"
+/usr/include/c++/14/bits/stl_algo.h:3625: constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&) [with _Tp = int]: Assertion '!(__hi < __lo)' failed.
+KCrash: Attempting to start /usr/bin/plasmashell
+KCrash: Application 'plasmashell' crashing... crashRecursionCounter = 2
+kf.plasma.quick: Applet preload policy set to 1
+file:///usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/main.qml:196:25: QML FolderViewDropArea (parent or ancestor of QQuickLayoutAttached): Binding loop detected for property "minimumWidth"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+qml: SystemTray ItemLoader: Invalid state, cannot determine source!
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/CompactRepresentation.qml:22:1: QML CompactRepresentation: Binding loop detected for property "implicitHeight"
+qt.dbus.integration: Could not connect "org.cups.cupsd.Notifier" to PrinterFinishingsChanged(QString, QString, QString, uint, QString, bool) : 
+QFont::setPointSizeF: Point size <= 0 (0.000000), must be greater than 0
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250897341: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250897341: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250897341: Unsupported image format
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/FullRepresentation.qml:21:1: QML FullRepresentation: Binding loop detected for property "implicitHeight"
+/usr/include/c++/14/bits/stl_algo.h:3625: constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&) [with _Tp = int]: Assertion '!(__hi < __lo)' failed.
+KCrash: Attempting to start /usr/bin/plasmashell
+KCrash: Application 'plasmashell' crashing... crashRecursionCounter = 2
+kf.plasma.quick: Applet preload policy set to 1
+file:///usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/main.qml:196:25: QML FolderViewDropArea (parent or ancestor of QQuickLayoutAttached): Binding loop detected for property "minimumWidth"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+qml: SystemTray ItemLoader: Invalid state, cannot determine source!
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/CompactRepresentation.qml:22:1: QML CompactRepresentation: Binding loop detected for property "implicitHeight"
+qt.dbus.integration: Could not connect "org.cups.cupsd.Notifier" to PrinterFinishingsChanged(QString, QString, QString, uint, QString, bool) : 
+QFont::setPointSizeF: Point size <= 0 (0.000000), must be greater than 0
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250900498: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250900498: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250900498: Unsupported image format
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/FullRepresentation.qml:21:1: QML FullRepresentation: Binding loop detected for property "implicitHeight"
+/usr/include/c++/14/bits/stl_algo.h:3625: constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&) [with _Tp = int]: Assertion '!(__hi < __lo)' failed.
+KCrash: Attempting to start /usr/bin/plasmashell
+KCrash: Application 'plasmashell' crashing... crashRecursionCounter = 2
+kf.plasma.quick: Applet preload policy set to 1
+file:///usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/main.qml:196:25: QML FolderViewDropArea (parent or ancestor of QQuickLayoutAttached): Binding loop detected for property "minimumWidth"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+qml: SystemTray ItemLoader: Invalid state, cannot determine source!
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/CompactRepresentation.qml:22:1: QML CompactRepresentation: Binding loop detected for property "implicitHeight"
+qt.dbus.integration: Could not connect "org.cups.cupsd.Notifier" to PrinterFinishingsChanged(QString, QString, QString, uint, QString, bool) : 
+QFont::setPointSizeF: Point size <= 0 (0.000000), must be greater than 0
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250903760: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250903760: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250903760: Unsupported image format
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/FullRepresentation.qml:21:1: QML FullRepresentation: Binding loop detected for property "implicitHeight"
+/usr/include/c++/14/bits/stl_algo.h:3625: constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&) [with _Tp = int]: Assertion '!(__hi < __lo)' failed.
+KCrash: Attempting to start /usr/bin/plasmashell
+KCrash: Application 'plasmashell' crashing... crashRecursionCounter = 2
+kf.plasma.quick: Applet preload policy set to 1
+file:///usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/main.qml:196:25: QML FolderViewDropArea (parent or ancestor of QQuickLayoutAttached): Binding loop detected for property "minimumWidth"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+qml: SystemTray ItemLoader: Invalid state, cannot determine source!
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/CompactRepresentation.qml:22:1: QML CompactRepresentation: Binding loop detected for property "implicitHeight"
+qt.dbus.integration: Could not connect "org.cups.cupsd.Notifier" to PrinterFinishingsChanged(QString, QString, QString, uint, QString, bool) : 
+QFont::setPointSizeF: Point size <= 0 (0.000000), must be greater than 0
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250907298: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250907298: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250907298: Unsupported image format
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/FullRepresentation.qml:21:1: QML FullRepresentation: Binding loop detected for property "implicitHeight"
+/usr/include/c++/14/bits/stl_algo.h:3625: constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&) [with _Tp = int]: Assertion '!(__hi < __lo)' failed.
+KCrash: Attempting to start /usr/bin/plasmashell
+KCrash: Application 'plasmashell' crashing... crashRecursionCounter = 2
+kf.plasma.quick: Applet preload policy set to 1
+file:///usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/main.qml:196:25: QML FolderViewDropArea (parent or ancestor of QQuickLayoutAttached): Binding loop detected for property "minimumWidth"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+qml: SystemTray ItemLoader: Invalid state, cannot determine source!
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/CompactRepresentation.qml:22:1: QML CompactRepresentation: Binding loop detected for property "implicitHeight"
+qt.dbus.integration: Could not connect "org.cups.cupsd.Notifier" to PrinterFinishingsChanged(QString, QString, QString, uint, QString, bool) : 
+QFont::setPointSizeF: Point size <= 0 (0.000000), must be greater than 0
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250910470: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250910470: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250910470: Unsupported image format
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/FullRepresentation.qml:21:1: QML FullRepresentation: Binding loop detected for property "implicitHeight"
+/usr/include/c++/14/bits/stl_algo.h:3625: constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&) [with _Tp = int]: Assertion '!(__hi < __lo)' failed.
+KCrash: Attempting to start /usr/bin/plasmashell
+KCrash: Application 'plasmashell' crashing... crashRecursionCounter = 2
+kf.plasma.quick: Applet preload policy set to 1
+file:///usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/main.qml:196:25: QML FolderViewDropArea (parent or ancestor of QQuickLayoutAttached): Binding loop detected for property "minimumWidth"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+file:///usr/share/plasma/plasmoids/org.kde.plasma.private.systemtray/contents/ui/main.qml:162:21: QML KSortFilterProxyModel: Binding loop detected for property "sourceModel"
+qml: SystemTray ItemLoader: Invalid state, cannot determine source!
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/CompactRepresentation.qml:22:1: QML CompactRepresentation: Binding loop detected for property "implicitHeight"
+qt.dbus.integration: Could not connect "org.cups.cupsd.Notifier" to PrinterFinishingsChanged(QString, QString, QString, uint, QString, bool) : 
+QFont::setPointSizeF: Point size <= 0 (0.000000), must be greater than 0
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250913207: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250913207: Unsupported image format
+qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml:201:9: QML QQuickImage: Error decoding: qrc:/qt/qml/org/kde/kirigamiaddons/components/Avatar.qml?timestamp=1716250913207: Unsupported image format
+file:///usr/share/ksysguard/sensorfaces/org.kde.ksysguard.piechart/contents/ui/FullRepresentation.qml:21:1: QML FullRepresentation: Binding loop detected for property "implicitHeight"
+/usr/include/c++/14/bits/stl_algo.h:3625: constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&) [with _Tp = int]: Assertion '!(__hi < __lo)' failed.
+KCrash: Attempting to start /usr/bin/plasmashell
+KCrash: Application 'plasmashell' crashing... crashRecursionCounter = 2
+/usr/include/c++/14/bits/stl_algo.h:3625: constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&) [with _Tp = int]: Assertion '!(__hi < __lo)' failed.
+KCrash: Attempting to start /usr/bin/plasmashell
+KCrash: Application 'plasmashell' crashing... crashRecursionCounter = 2
+/usr/include/c++/14/bits/stl_algo.h:3625: constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&) [with _Tp = int]: Assertion '!(__hi < __lo)' failed.
+KCrash: Attempting to start /usr/bin/plasmashell
+KCrash: Application 'plasmashell' crashing... crashRecursionCounter = 2
+/usr/include/c++/14/bits/stl_algo.h:3625: constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&) [with _Tp = int]: Assertion '!(__hi < __lo)' failed.
+KCrash: Attempting to start /usr/bin/plasmashell
+KCrash: Application 'plasmashell' crashing... crashRecursionCounter = 2
+/usr/include/c++/14/bits/stl_algo.h:3625: constexpr const _Tp& std::clamp(const _Tp&, const _Tp&, const _Tp&) [with _Tp = int]: Assertion '!(__hi < __lo)' failed.
+KCrash: Attempting to start /usr/bin/plasmashell
+KCrash: Application 'plasmashell' crashing... crashRecursionCounter = 2

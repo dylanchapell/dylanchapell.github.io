@@ -1,0 +1,1132 @@
+# Asahi Linux System Diagnostic Dump
+
+    Collected at:   Mon May 20 05:34:49 PM MDT 2024 (2024-05-20T17:34:49-06:00)
+    Username:       dylanchapell
+    Hostname:       dylan-asahi
+
+## Device information
+    Model:          Apple MacBook Air (M1, 2020)
+    Compatible:     apple,j313 apple,t8103 apple,arm-platform
+
+## Firmware versions
+    iBoot1:         iBoot-10151.41.12
+    iBoot2:         iBoot-8422.141.2
+    SFR:            14.1.1
+    OS firmware:    13.5
+    m1n1 stage 2:   v1.4.14
+    U-Boot:         2024.04
+
+## Boot information
+    ESP UUID:       45e6f66c-24c7-4933-bfb7-872e80589b1f
+    EFI:            available
+
+## System information
+    Distro:         Fedora Linux Asahi Remix 40 (Forty)
+    Kernel:         6.8.9-402.asahi.fc40.aarch64+16k
+    Kernel build:   #1 SMP PREEMPT_DYNAMIC Wed May  8 18:05:42 UTC 2024
+    Uptime:          17:34:49 up 3 min,  2 users,  load average: 0.06, 0.21, 0.10
+    Kernel cmdline: BOOT_IMAGE=(hd0,gpt5)/vmlinuz-6.8.9-402.asahi.fc40.aarch64+16k root=UUID=af1e21d4-61cc-422b-83e7-984e03b70881 ro rootflags=subvol=root rhgb quiet rootflags=subvol=root
+
+## Audio Configuration:
+    Default profile: HiFi
+    Pro Audio profile detected: no
+    Old configuration files in `/etc/`: no
+    File conflicts in `/usr/share/`: no
+    Speaker detonation requested: no
+    TAS2764 quirks applied: N/A
+
+## Environment
+    LANG=en_US.utf8
+    LC_ADDRESS=en_US.utf8
+    LC_IDENTIFICATION=en_US.utf8
+    LC_MEASUREMENT=en_US.utf8
+    LC_MONETARY=en_US.utf8
+    LC_NAME=en_US.utf8
+    LC_NUMERIC=en_US.utf8
+    LC_PAPER=en_US.utf8
+    LC_TELEPHONE=en_US.utf8
+    LC_TIME=en_US.utf8
+    TERM=linux
+    XDG_SESSION_TYPE=tty
+
+## Mounts
+```
+/dev/nvme0n1p6 / btrfs rw,seclabel,relatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=256,subvol=/root 0 0
+vendorfw /usr/lib/firmware/vendor tmpfs rw,seclabel,relatime,mode=755,inode64 0 0
+devtmpfs /dev devtmpfs rw,seclabel,nosuid,size=4096k,nr_inodes=490754,mode=755,inode64 0 0
+tmpfs /dev/shm tmpfs rw,seclabel,nosuid,nodev,inode64 0 0
+devpts /dev/pts devpts rw,seclabel,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000 0 0
+sysfs /sys sysfs rw,seclabel,nosuid,nodev,noexec,relatime 0 0
+securityfs /sys/kernel/security securityfs rw,nosuid,nodev,noexec,relatime 0 0
+cgroup2 /sys/fs/cgroup cgroup2 rw,seclabel,nosuid,nodev,noexec,relatime,nsdelegate,memory_recursiveprot 0 0
+pstore /sys/fs/pstore pstore rw,seclabel,nosuid,nodev,noexec,relatime 0 0
+efivarfs /sys/firmware/efi/efivars efivarfs ro,nosuid,nodev,noexec,relatime 0 0
+bpf /sys/fs/bpf bpf rw,nosuid,nodev,noexec,relatime,mode=700 0 0
+configfs /sys/kernel/config configfs rw,nosuid,nodev,noexec,relatime 0 0
+proc /proc proc rw,nosuid,nodev,noexec,relatime 0 0
+tmpfs /run tmpfs rw,seclabel,nosuid,nodev,size=3163728k,nr_inodes=819200,mode=755,inode64 0 0
+selinuxfs /sys/fs/selinux selinuxfs rw,nosuid,noexec,relatime 0 0
+systemd-1 /proc/sys/fs/binfmt_misc autofs rw,relatime,fd=37,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=6589 0 0
+debugfs /sys/kernel/debug debugfs rw,seclabel,nosuid,nodev,noexec,relatime 0 0
+hugetlbfs /dev/hugepages hugetlbfs rw,seclabel,nosuid,nodev,relatime,pagesize=32M 0 0
+mqueue /dev/mqueue mqueue rw,seclabel,nosuid,nodev,noexec,relatime 0 0
+tracefs /sys/kernel/tracing tracefs rw,seclabel,nosuid,nodev,noexec,relatime 0 0
+fusectl /sys/fs/fuse/connections fusectl rw,nosuid,nodev,noexec,relatime 0 0
+tmpfs /tmp tmpfs rw,seclabel,nosuid,nodev,nr_inodes=1048576,inode64 0 0
+/dev/nvme0n1p5 /boot ext4 rw,seclabel,relatime 0 0
+/dev/nvme0n1p6 /home btrfs rw,seclabel,relatime,compress=zstd:1,ssd,discard=async,space_cache=v2,subvolid=257,subvol=/home 0 0
+/dev/nvme0n1p4 /boot/efi vfat rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=winnt,errors=remount-ro 0 0
+binfmt_misc /proc/sys/fs/binfmt_misc binfmt_misc rw,nosuid,nodev,noexec,relatime 0 0
+sunrpc /var/lib/nfs/rpc_pipefs rpc_pipefs rw,relatime 0 0
+tmpfs /run/user/1000 tmpfs rw,seclabel,nosuid,nodev,relatime,size=1581856k,nr_inodes=395464,mode=700,uid=1000,gid=1000,inode64 0 0
+portal /run/user/1000/doc fuse.portal rw,nosuid,nodev,relatime,user_id=1000,group_id=1000 0 0
+```
+
+## Package versions
+```
+alsa-ucm-asahi-5-3.fc40.noarch
+asahi-audio-2.2-1.fc40.noarch
+asahi-platform-metapackage-0-10.fc40.aarch64
+asahi-repos-1-12.fc40.noarch
+dracut-asahi-20240429-1.fc40.noarch
+fedora-asahi-remix-scripts-20240506-1.fc40.noarch
+kernel-16k-6.8.9-402.asahi.fc39.aarch64
+kernel-16k-6.8.9-402.asahi.fc40.aarch64
+kernel-16k-6.8.9-404.asahi.fc40.aarch64
+kernel-16k-modules-extra-6.8.9-402.asahi.fc39.aarch64
+kernel-16k-modules-extra-6.8.9-402.asahi.fc40.aarch64
+kernel-16k-modules-extra-6.8.9-404.asahi.fc40.aarch64
+m1n1-1.4.14-1.fc40.aarch64
+package asahi-fwextract is not installed
+package mesa is not installed
+pipewire-1.0.6-1.fc40.aarch64
+speakersafetyd-0.1.9-2.fc40.aarch64
+tiny-dfr-0.2.0-4.fc40.aarch64
+uboot-images-armv8-2024.04-4.fc40.noarch
+update-m1n1-20240429-1.fc40.noarch
+wireplumber-0.5.2-1.fc40.aarch64
+```
+
+## Block devices
+```
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+nvme0n1     259:0    0 931.8G  0 disk 
+├─nvme0n1p1 259:1    0   500M  0 part 
+├─nvme0n1p2 259:2    0 353.9G  0 part 
+├─nvme0n1p3 259:3    0   2.3G  0 part 
+├─nvme0n1p4 259:4    0   500M  0 part /boot/efi
+├─nvme0n1p5 259:5    0  1000M  0 part /boot
+├─nvme0n1p6 259:6    0 559.3G  0 part /home
+│                                     /
+└─nvme0n1p7 259:7    0     5G  0 part 
+nvme0n2     259:8    0     3M  0 disk 
+nvme0n3     259:9    0   128M  0 disk 
+```
+
+## PCI devices
+```
+00:00.0 PCI bridge: Apple Inc. Apple Silicon PCI Express Root Port (rev 01)
+01:00.0 Network controller: Broadcom Inc. and subsidiaries BCM4378 802.11ax Dual Band Wireless Network Adapter (rev 03)
+01:00.1 Network controller: Broadcom Inc. and subsidiaries BRCM4378 Bluetooth Controller (rev 03)
+```
+
+## Input devices
+```
+I: Bus=001c Vendor=05ac Product=0281 Version=0935
+N: Name="Apple Internal Keyboard / Trackpad"
+P: Phys=spi1.0 (2)
+S: Sysfs=/devices/platform/soc/23510c000.spi/spi_master/spi1/spi1.0/001C:05AC:0281.0002/input/input0
+U: Uniq=
+H: Handlers=mouse0 event0 
+B: PROP=5
+B: EV=1b
+B: KEY=e520 10000 0 0 0 0
+B: ABS=67f800001000003
+B: MSC=10
+
+I: Bus=001c Vendor=05ac Product=0281 Version=0935
+N: Name="Apple Internal Keyboard / Trackpad"
+P: Phys=spi1.0 (1)
+S: Sysfs=/devices/platform/soc/23510c000.spi/spi_master/spi1/spi1.0/001C:05AC:0281.0001/input/input1
+U: Uniq=
+H: Handlers=sysrq kbd leds event1 
+B: PROP=0
+B: EV=120013
+B: KEY=10000 0 0 0 101007b02011007 ff9f21fac14057ff ffbeffdfffefffff fffffffffffffffe
+B: MSC=10
+B: LED=1f
+
+I: Bus=0000 Vendor=0000 Product=0000 Version=0000
+N: Name="Apple SMC power/lid events"
+P: Phys=macsmc-hid (0)
+S: Sysfs=/devices/platform/soc/23e400000.smc/macsmc-hid/input/input2
+U: Uniq=
+H: Handlers=kbd event2 
+B: PROP=0
+B: EV=23
+B: KEY=10000000000000 0
+B: SW=1
+
+I: Bus=0000 Vendor=0000 Product=0000 Version=0000
+N: Name="MacBook Air J313 Headphone Jack"
+P: Phys=ALSA
+S: Sysfs=/devices/platform/sound/sound/card0/input3
+U: Uniq=
+H: Handlers=event3 
+B: PROP=0
+B: EV=21
+B: SW=14
+```
+
+## Loaded modules
+```
+Module                  Size  Used by
+xt_conntrack           49152  2
+xt_MASQUERADE          65536  2
+xt_mark                49152  2
+nft_compat             49152  6
+uinput                 49152  0
+rfcomm                131072  16
+snd_seq_dummy          49152  0
+snd_hrtimer            49152  1
+snd_seq               147456  7 snd_seq_dummy
+snd_seq_device         49152  1 snd_seq
+tun                    98304  2
+nft_masq               49152  1
+nft_fib_inet           49152  1
+nft_fib_ipv4           49152  1 nft_fib_inet
+nft_fib_ipv6           49152  1 nft_fib_inet
+nft_fib                49152  3 nft_fib_ipv6,nft_fib_ipv4,nft_fib_inet
+nft_reject_inet        49152  10
+nf_reject_ipv4         49152  1 nft_reject_inet
+nf_reject_ipv6         65536  1 nft_reject_inet
+nft_reject             49152  1 nft_reject_inet
+nft_ct                 49152  7
+nft_chain_nat          49152  5
+nf_nat                 98304  3 nft_masq,nft_chain_nat,xt_MASQUERADE
+nf_conntrack          212992  5 xt_conntrack,nf_nat,nft_ct,nft_masq,xt_MASQUERADE
+nf_defrag_ipv6         65536  1 nf_conntrack
+nf_defrag_ipv4         49152  1 nf_conntrack
+ip_set                 98304  0
+nf_tables             360448  411 nft_ct,nft_compat,nft_reject_inet,nft_fib_ipv6,nft_fib_ipv4,nft_masq,nft_chain_nat,nft_reject,nft_fib,nft_fib_inet
+uhid                   49152  4
+bnep                   65536  2
+qrtr                   81920  4
+brcmfmac_wcc           49152  0
+sunrpc                770048  1
+binfmt_misc            65536  1
+brcmfmac              638976  1 brcmfmac_wcc
+brcmutil               49152  1 brcmfmac
+cfg80211             1163264  1 brcmfmac
+hci_bcm4377            65536  0
+bluetooth             950272  40 hci_bcm4377,bnep,rfcomm
+rfkill                 49152  6 bluetooth,cfg80211
+appledrm               49152  3
+snd_soc_macaudio       65536  7
+macsmc_hid             49152  0
+apple_isp             131072  0
+videobuf2_dma_sg       49152  1 apple_isp
+snd_soc_cs42l83_i2c    49152  1
+videobuf2_memops       65536  1 videobuf2_dma_sg
+snd_soc_apple_mca      49152  1
+ofpart                 65536  0
+snd_soc_cs42l42        65536  1 snd_soc_cs42l83_i2c
+snd_soc_tas2770        49152  2
+snd_soc_core          491520  4 snd_soc_tas2770,snd_soc_apple_mca,snd_soc_macaudio,snd_soc_cs42l42
+videobuf2_v4l2         65536  1 apple_isp
+videobuf2_common      114688  4 videobuf2_v4l2,videobuf2_dma_sg,apple_isp,videobuf2_memops
+snd_compress           65536  1 snd_soc_core
+apple_dcp             327680  1 appledrm
+spi_nor               196608  0
+ac97_bus               49152  1 snd_soc_core
+videodev              393216  2 videobuf2_v4l2,apple_isp
+mtd                   131072  3 spi_nor,ofpart
+snd_pcm_dmaengine      49152  3 snd_soc_apple_mca,apple_dcp,snd_soc_core
+drm_dma_helper         49152  3 appledrm,apple_dcp
+mc                    114688  4 videodev,videobuf2_v4l2,videobuf2_common,apple_isp
+mux_core               49152  1 apple_dcp
+leds_pwm               49152  0
+apple_soc_cpufreq      65536  0
+joydev                 65536  0
+loop                   65536  0
+dm_multipath           81920  0
+nfnetlink              49152  5 nft_compat,nf_tables,ip_set
+hid_apple              65536  0
+spi_hid_apple_of       49152  0
+nvmem_spmi_mfd         49152  6
+tps6598x              131072  0
+spi_hid_apple          65536  1 spi_hid_apple_of
+rtc_macsmc             49152  0
+macsmc_power           49152  0
+gpio_macsmc            49152  1
+crct10dif_ce           49152  1
+macsmc_reboot          49152  0
+simple_mfd_spmi        49152  0
+polyval_ce             49152  0
+polyval_generic        49152  1 polyval_ce
+ghash_ce               49152  0
+dwc3                  212992  2
+sha3_ce                49152  0
+phy_apple_atc          98304  10
+ulpi                   65536  1 dwc3
+sha512_ce              49152  0
+snd_pcm               212992  8 snd_soc_apple_mca,apple_dcp,snd_compress,snd_soc_macaudio,snd_soc_cs42l42,snd_soc_core,snd_pcm_dmaengine
+typec                 131072  2 phy_apple_atc,tps6598x
+sha512_arm64           49152  1 sha512_ce
+udc_core              114688  1 dwc3
+macsmc_rtkit           49152  0
+asahi                1212416  35
+macsmc                 65536  6 macsmc_rtkit,macsmc_reboot,gpio_macsmc,macsmc_hid,macsmc_power,rtc_macsmc
+nvmem_apple_efuses     49152  0
+pinctrl_apple_gpio     49152  7
+apple_wdt              49152  1
+spmi_apple_controller    49152  0
+snd_timer              81920  3 snd_seq,snd_hrtimer,snd_pcm
+snd                   163840  23 snd_seq,snd_seq_device,apple_dcp,snd_timer,snd_compress,snd_soc_macaudio,snd_soc_core,snd_pcm
+clk_apple_nco          49152  6
+apple_admac            65536  4
+apple_dart             49152  9
+pwm_apple              49152  1
+i2c_pasemi_platform    49152  0
+soundcore              49152  1 snd
+spi_apple              49152  0
+i2c_pasemi_core        65536  1 i2c_pasemi_platform
+xhci_plat_hcd          49152  0
+vfat                   49152  1
+fat                   114688  1 vfat
+nvme_apple             65536  3
+apple_sart             65536  1 nvme_apple
+nvme_core             245760  4 nvme_apple
+nvme_auth              65536  1 nvme_core
+scsi_dh_rdac           49152  0
+scsi_dh_emc            49152  0
+scsi_dh_alua           49152  0
+ip6_tables             65536  0
+ip_tables              65536  0
+fuse                  196608  3
+i2c_dev                65536  0
+```
+
+## Module parameters
+    asahi
+        debug_flags=0
+        initial_tvb_size=8
+
+    hid_apple
+        fnmode=3
+        iso_layout=-1
+        swap_ctrl_cmd=0
+        swap_fn_leftctrl=0
+        swap_opt_cmd=0
+
+    hid_magicmouse
+        emulate_3button=Y
+        emulate_scroll_wheel=Y
+        report_undeciphered=N
+        scroll_acceleration=N
+        scroll_speed=32
+
+
+## Kernel log
+```
+May 20 17:31:00 dylan-asahi kernel: audit: type=1334 audit(1716247859.700:6): prog-id=54 op=LOAD
+May 20 17:31:00 dylan-asahi kernel: audit: type=1334 audit(1716247859.701:7): prog-id=55 op=LOAD
+May 20 17:31:00 dylan-asahi kernel: audit: type=1334 audit(1716247859.701:8): prog-id=56 op=LOAD
+May 20 17:31:00 dylan-asahi kernel: audit: type=1130 audit(1716247859.701:9): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-growfs-root comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 20 17:31:00 dylan-asahi kernel: audit: type=1130 audit(1716247859.702:10): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-sysctl comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 20 17:31:00 dylan-asahi kernel: leds_pwm led-controller: failed to read period for kbd_backlight, default to off
+May 20 17:31:00 dylan-asahi kernel: mc: Linux media interface: v0.10
+May 20 17:31:00 dylan-asahi kernel: cpu cpu0: EM: created perf domain
+May 20 17:31:00 dylan-asahi kernel: cpu cpu4: EM: created perf domain
+May 20 17:31:00 dylan-asahi kernel: videodev: Linux video capture interface: v2.00
+May 20 17:31:00 dylan-asahi kernel: EXT4-fs (nvme0n1p5): mounted filesystem 3d46e6b3-2808-4d00-ad32-0fd7bdbd6bd6 r/w with ordered data mode. Quota mode: none.
+May 20 17:31:00 dylan-asahi kernel: 1 fixed-partitions partitions found on MTD device spi0.0
+May 20 17:31:00 dylan-asahi kernel: Creating 1 MTD partitions on "spi0.0":
+May 20 17:31:00 dylan-asahi kernel: 0x000000700000-0x000000800000 : "nvram"
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: Adding to iommu group 3
+May 20 17:31:00 dylan-asahi kernel: cs42l83 0-0048: supply VA not found, using dummy regulator
+May 20 17:31:00 dylan-asahi kernel: cs42l83 0-0048: supply VP not found, using dummy regulator
+May 20 17:31:00 dylan-asahi kernel: cs42l83 0-0048: supply VCP not found, using dummy regulator
+May 20 17:31:00 dylan-asahi kernel: cs42l83 0-0048: supply VD_FILT not found, using dummy regulator
+May 20 17:31:00 dylan-asahi kernel: cs42l83 0-0048: supply VL not found, using dummy regulator
+May 20 17:31:00 dylan-asahi kernel: cs42l83 0-0048: Cirrus Logic CS42L83, Revision: B0
+May 20 17:31:00 dylan-asahi kernel: apple-isp 22a000000.isp: Adding to iommu group 4
+May 20 17:31:00 dylan-asahi kernel: apple-isp 22a000000.isp: ISP firmware-compat: 13.5 (FW: 13.5)
+May 20 17:31:00 dylan-asahi kernel: input: Apple SMC power/lid events as /devices/platform/soc/23e400000.smc/macsmc-hid/input/input2
+May 20 17:31:00 dylan-asahi kernel: apple-isp 22a000000.isp: IPC surface iova: 0x1000000
+May 20 17:31:00 dylan-asahi kernel: apple-isp 22a000000.isp: Data surface iova: 0x101c000
+May 20 17:31:00 dylan-asahi kernel: apple-drm soc:display-subsystem: Adding to iommu group 5
+May 20 17:31:00 dylan-asahi kernel: Bluetooth: Core ver 2.22
+May 20 17:31:00 dylan-asahi kernel: NET: Registered PF_BLUETOOTH protocol family
+May 20 17:31:00 dylan-asahi kernel: Bluetooth: HCI device and connection manager initialized
+May 20 17:31:00 dylan-asahi kernel: Bluetooth: HCI socket layer initialized
+May 20 17:31:00 dylan-asahi kernel: Bluetooth: L2CAP socket layer initialized
+May 20 17:31:00 dylan-asahi kernel: Bluetooth: SCO socket layer initialized
+May 20 17:31:00 dylan-asahi kernel: platform 231c00000.dcp:piodma: Adding to iommu group 6
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: Initializing (protocol version 12)
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: Unknown system endpoint: 0x0a
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: shmem_setup: iova: f00267000 -> pa: bd996b000 -> iomem: ffff800082003000
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: shmem_setup: iova: ffbffc000, buffer: ffff800081f40000
+May 20 17:31:00 dylan-asahi kernel: hci_bcm4377 0000:01:00.1: Adding to iommu group 7
+May 20 17:31:00 dylan-asahi kernel: input: MacBook Air J313 Headphone Jack as /devices/platform/sound/sound/card0/input3
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: shmem_setup: iova: ffbff8000, buffer: ffff800081f60000
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: shmem_setup: iova: f0025f000 -> pa: bd9963000 -> iomem: ffff800082113000
+May 20 17:31:00 dylan-asahi kernel: apple-drm soc:display-subsystem: bound 231c00000.dcp (ops dcp_comp_ops [apple_dcp])
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: ap_link.c:299: shared memory dva: 0xffbe00000 0xffffffff000e7000
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: ap_link.c:276: ap_link: IOMFB: DCP heap size: 0x1030000 [iBoot:0x1030000] [LinkService:0x0]
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: nifiedPipeline.cpp:4191: IOMFB: Could not find Backlight service
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: nifiedPipeline.cpp:4199: IOMFB: Could not find nvram service
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: nifiedPipeline.cpp:1838: virtual bool UnifiedPipeline::start_ios_gated(): Created AP Services
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: nifiedPipeline.cpp:1864: start_ios_gated: trigger pending HPD notification
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: cb_hotplug() connected:1, valid_mode:0
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: dcp_hotplug() connected:1 valid_mode:0 nr_modes:0
+May 20 17:31:00 dylan-asahi kernel: FAT-fs (nvme0n1p4): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: nifiedPipeline.cpp:1871: virtual bool UnifiedPipeline::start_ios_gated(): Flushed RTPs
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: PPipeDCP_H13P.cpp:11092: IOMFB updateFrequencies: minimum-frequency property not found, using getClockFrequency(0) instead.
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: nifiedPipeline.cpp:1356: set_device_enabled_gated: current state: 1, requested state: 1
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: PPipeDCP_H13P.cpp:11092: IOMFB updateFrequencies: minimum-frequency property not found, using getClockFrequency(0) instead.
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: PPipeDCP_H13P.cpp:10490: set_run_mode_safe: deferring: 2 -> 4
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: PPipeDCP_H13P.cpp:10395: virtual IOMFBStatus IOMFB::UPPipeDCP_H13P::ready_for_run_mode_change(IOMFB::AppleRegisterStream *): initiating deferred run mod
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: M3Hal_v1.cpp:197: IOMFB: load APT M3 IMem : size 0x7948
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: M3Hal_v1.cpp:197: IOMFB: load APT M3 DMem : size 0x6f60
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: CAHandler.cpp:188: IOMFB load_ca_data: Unrecognized data version 0 (expected 1 or 2)
+May 20 17:31:00 dylan-asahi kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+May 20 17:31:00 dylan-asahi kernel: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+May 20 17:31:00 dylan-asahi kernel: Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: UPPipe.cpp:3767: IOMFB read_pmu_data_sync: pmu ram read error (e00800d8)
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: PPipeDCP_H13P.cpp:14085: IOMFB Int RTBandwidth: program_M3_rt_config: Using Legacy, scratch 23b738014
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: PPipeDCP_H13P.cpp:14105: IOMFB Int RTBandwidth: using legacy. Doorbell 23bc3c000, bit 2
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: UPTSQManager.cpp:133: IOMFB: clearing M3 reset
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: UPTSQ_Hal_v1.cpp:349: IOMFB: timebase_offset = 4
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: AFK[ep:20]: new service system on channel 5
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: AFK[ep:20]: new service powerlog-service on channel 7
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: dpointInterface.cpp:606: [AFK][AFKMailboxSharedMemoryEndpointInterface:#63] if:1 inCmd:0 inResp:0 outRepErr:0 outCmdErr:0 t:769332421
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: dpointInterface.cpp:606: [AFK][AFKMailboxSharedMemoryEndpointInterface:#66] if:3 inCmd:0 inResp:0 outRepErr:0 outCmdErr:0 t:769334145
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: UPTSQManager.cpp:105: IOMFB: switch to normal mode succeeded
+May 20 17:31:00 dylan-asahi kernel: usbcore: registered new interface driver brcmfmac
+May 20 17:31:00 dylan-asahi kernel: brcmfmac 0000:01:00.0: Adding to iommu group 7
+May 20 17:31:00 dylan-asahi kernel: brcmfmac 0000:01:00.0: enabling device (0000 -> 0002)
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: DCP booted
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: DCP is_main_display: 1
+May 20 17:31:00 dylan-asahi kernel: apple-dcp 231c00000.dcp: dcp_hotplug() connected:1 valid_mode:0 nr_modes:1
+May 20 17:31:00 dylan-asahi kernel: brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac4378b1-pcie for chip BCM4378/3
+May 20 17:31:00 dylan-asahi kernel: brcmfmac 0000:01:00.0: Direct firmware load for brcm/brcmfmac4378b1-pcie.apple,shikoku-RASP-u-6.5-X0.bin failed with error -2
+May 20 17:31:00 dylan-asahi kernel: brcmfmac 0000:01:00.0: Direct firmware load for brcm/brcmfmac4378b1-pcie.apple,shikoku-RASP-u-6.5.bin failed with error -2
+May 20 17:31:00 dylan-asahi kernel: brcmfmac 0000:01:00.0: Direct firmware load for brcm/brcmfmac4378b1-pcie.apple,shikoku-RASP-u.bin failed with error -2
+May 20 17:31:00 dylan-asahi kernel: brcmfmac 0000:01:00.0: Direct firmware load for brcm/brcmfmac4378b1-pcie.apple,shikoku-RASP.bin failed with error -2
+May 20 17:31:00 dylan-asahi kernel: brcmfmac 0000:01:00.0: Direct firmware load for brcm/brcmfmac4378b1-pcie.apple,shikoku-X0.bin failed with error -2
+May 20 17:31:00 dylan-asahi kernel: brcmfmac 0000:01:00.0: Direct firmware load for brcm/brcmfmac4378b1-pcie.sig failed with error -2
+May 20 17:31:00 dylan-asahi kernel: [drm] Initialized apple 1.0.0 20221106 for soc:display-subsystem on minor 2
+May 20 17:31:00 dylan-asahi kernel: fbcon: Deferring console take-over
+May 20 17:31:00 dylan-asahi kernel: apple-drm soc:display-subsystem: [drm] fb0: appledrmfb frame buffer device
+May 20 17:31:00 dylan-asahi kernel: kauditd_printk_skb: 35 callbacks suppressed
+May 20 17:31:00 dylan-asahi kernel: audit: type=1130 audit(1716247860.759:46): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-binfmt comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 20 17:31:00 dylan-asahi kernel: hci_bcm4377 0000:01:00.1: enabling device (0000 -> 0002)
+May 20 17:31:00 dylan-asahi kernel: audit: type=1130 audit(1716247860.957:47): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-tmpfiles-setup comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 20 17:31:00 dylan-asahi kernel: audit: type=1334 audit(1716247860.973:48): prog-id=59 op=LOAD
+May 20 17:31:00 dylan-asahi kernel: audit: type=1334 audit(1716247860.973:49): prog-id=60 op=LOAD
+May 20 17:31:00 dylan-asahi kernel: audit: type=1334 audit(1716247860.973:50): prog-id=61 op=LOAD
+May 20 17:31:00 dylan-asahi kernel: audit: type=1334 audit(1716247860.976:51): prog-id=62 op=LOAD
+May 20 17:31:00 dylan-asahi kernel: audit: type=1305 audit(1716247860.996:52): auid=4294967295 ses=4294967295 subj=system_u:system_r:unconfined_service_t:s0 op=add_rule key=(null) list=1 res=1
+May 20 17:31:00 dylan-asahi kernel: audit: type=1300 audit(1716247860.996:52): arch=c00000b7 syscall=206 success=yes exit=1056 a0=3 a1=ffffda732850 a2=420 a3=0 items=0 ppid=843 pid=862 auid=4294967295 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=4294967295 comm="auditctl" exe="/usr/sbin/auditctl" subj=system_u:system_r:unconfined_service_t:s0 key=(null)
+May 20 17:31:00 dylan-asahi kernel: audit: type=1327 audit(1716247860.996:52): proctitle=2F7362696E2F617564697463746C002D52002F6574632F61756469742F61756469742E72756C6573
+May 20 17:31:00 dylan-asahi kernel: audit: type=1130 audit(1716247860.998:53): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=audit-rules comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 20 17:31:01 dylan-asahi kernel: RPC: Registered named UNIX socket transport module.
+May 20 17:31:01 dylan-asahi kernel: RPC: Registered udp transport module.
+May 20 17:31:01 dylan-asahi kernel: RPC: Registered tcp transport module.
+May 20 17:31:01 dylan-asahi kernel: RPC: Registered tcp-with-tls transport module.
+May 20 17:31:01 dylan-asahi kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+May 20 17:31:01 dylan-asahi kernel: snd-soc-macaudio sound: Speaker volumes unlocked
+May 20 17:31:01 dylan-asahi kernel: brcmfmac: brcmf_c_process_txcap_blob: TxCap blob found, loading
+May 20 17:31:01 dylan-asahi kernel: brcmfmac: brcmf_c_process_cal_blob: Calibration blob provided by platform, loading
+May 20 17:31:01 dylan-asahi kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmware: BCM4378/3 wl0: May 13 2023 07:20:48 version 18.20.383.15.7.8.150 FWID 01-b37727a5
+May 20 17:31:01 dylan-asahi kernel: NET: Registered PF_QIPCRTR protocol family
+May 20 17:31:01 dylan-asahi kernel: Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+May 20 17:31:01 dylan-asahi kernel: Bluetooth: BNEP filters: protocol multicast
+May 20 17:31:01 dylan-asahi kernel: Bluetooth: BNEP socket layer initialized
+May 20 17:31:01 dylan-asahi kernel: brcmfmac 0000:01:00.0 wlp1s0f0: renamed from wlan0
+May 20 17:31:01 dylan-asahi kernel: Bluetooth: hci0: HCI LE Coded PHY feature bit is set, but its usage is not supported.
+May 20 17:31:01 dylan-asahi kernel: apple-isp: CISP_CMD_CONFIG_GET: 
+May 20 17:31:01 dylan-asahi kernel: apple-isp: 00000000 00000003 016e3600 00000001 0000000a 00000000 00000001
+May 20 17:31:01 dylan-asahi kernel: apple-isp 22a000000.isp: found sensor 248 CC21125014BPM0D7R on ch 0
+May 20 17:31:01 dylan-asahi kernel: apple-isp: ch: CISP_CMD_CH_INFO_GET: 0
+May 20 17:31:01 dylan-asahi kernel: apple-isp: ch: 00000000 0000010d 00000000 07db0001 00050024 00040007 00000005 00000001
+May 20 17:31:01 dylan-asahi kernel: apple-isp: ch: 00000248 00000007 00000001 00000001 00000000 00000000 00000000 00000000
+May 20 17:31:01 dylan-asahi kernel: apple-isp: ch: 00000000 00000000 00000000 00010000 00000001 00000000 00000004 00000020
+May 20 17:31:01 dylan-asahi kernel: apple-isp: ch: 00000001 00000000 00004680 00000040 00000001 00000002 00004000 00000040
+May 20 17:31:01 dylan-asahi kernel: apple-isp: ch: 00000001 00000000 00000000 00000036 00000000 00000000 000f4240 434300a0
+May 20 17:31:01 dylan-asahi kernel: apple-isp: ch: 32313132 34313035 304d5042 00523744 00000000 00000008 00000000 00000000
+May 20 17:31:01 dylan-asahi kernel: apple-isp: ch: 00000004 00000000 00000000 00000000 00000000 00000000 00000000 00ff0000
+May 20 17:31:01 dylan-asahi kernel: apple-isp: ch: 00000c00 00000000 0000001c 00000680 00000004 00000004 00000000 00000000
+May 20 17:31:01 dylan-asahi kernel: apple-isp: ch: 00000000 00000000 00000000 00000000 05100000 000002e0
+May 20 17:31:01 dylan-asahi kernel: apple-isp: ps: CISP_CMD_CH_CAMERA_CONFIG_GET: 0
+May 20 17:31:01 dylan-asahi kernel: apple-isp: ps: 00000000 00000106 00000000 00000000 02e00510 02e00510 00000000 00001df8
+May 20 17:31:01 dylan-asahi kernel: apple-isp: ps: 00000100 00000001 00000040 00000040 00000040 00000040 00000040 00000040
+May 20 17:31:01 dylan-asahi kernel: apple-isp: ps: 00000003 00000040 00000040 00000005 00000000 00000528 00000001 00000000
+May 20 17:31:01 dylan-asahi kernel: apple-isp: ps: 0249f000 00000006 00000007 00000000 00000009 000f4240 00000025 00000000
+May 20 17:31:01 dylan-asahi kernel: apple-isp: ps: 00004000 00000014 00000015 00000000 00000000 00000000 00000510 000002e0
+May 20 17:31:01 dylan-asahi kernel: apple-isp: ps: 00010000 b9680000 0ef80000 00000000 0000001f 00000000 00000000 00000000
+May 20 17:31:01 dylan-asahi kernel: apple-isp: ps: 00000510 000002e0 00000100 00000000 00000000 00000510 000002e0
+May 20 17:31:01 dylan-asahi kernel: apple-isp 22a000000.isp: apple-isp probe!
+May 20 17:31:01 dylan-asahi kernel: Bluetooth: MGMT ver 1.22
+May 20 17:31:01 dylan-asahi kernel: ieee80211 phy0: brcmf_dongle_roam: WLC_SET_ROAM_DELTA error (-52)
+May 20 17:31:02 dylan-asahi kernel: ieee80211 phy0: brcmf_p2p_set_firmware: failed to update device address ret -52
+May 20 17:31:02 dylan-asahi kernel: ieee80211 phy0: brcmf_p2p_create_p2pdev: set p2p_disc error
+May 20 17:31:02 dylan-asahi kernel: ieee80211 phy0: brcmf_cfg80211_add_iface: add iface p2p-dev-wlp1s0f type 10 failed: err=-52
+May 20 17:31:02 dylan-asahi kernel: tun: Universal TUN/TAP device driver, 1.6
+May 20 17:31:05 dylan-asahi kernel: apple-dcp 231c00000.dcp: dcp_poweron() starting
+May 20 17:31:05 dylan-asahi kernel: apple-dcp 231c00000.dcp: set_digital_out_mode(color:1 timing:2) "2560x1600": 60 266630 2560 2568 2600 2642 1600 1632 1640 1682 0x48 0x0
+May 20 17:31:05 dylan-asahi kernel: apple-dcp 231c00000.dcp: set_digital_out_mode() color mode depth:8 format:0 colorimetry:16 eotf:0 range:0
+May 20 17:31:05 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: nifiedPipeline.cpp:7462: set_digital_out_mode: Modeset requested for colorID: 1, timingID: 2
+May 20 17:31:05 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: PPipeDCP_H13P.cpp:18011: Dual pipe disabled offset 0
+May 20 17:31:05 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: nifiedPipeline.cpp:7465: set_digital_out_mode returned 8000000b
+May 20 17:31:05 dylan-asahi kernel: apple-dcp 231c00000.dcp: set_digital_out_mode finished:8500
+May 20 17:31:06 dylan-asahi kernel: warning: `QSampleCache::L' uses wireless extensions which will stop working for Wi-Fi 7 hardware; use nl80211
+May 20 17:31:06 dylan-asahi kernel: Bluetooth: RFCOMM TTY layer initialized
+May 20 17:31:06 dylan-asahi kernel: Bluetooth: RFCOMM socket layer initialized
+May 20 17:31:06 dylan-asahi kernel: Bluetooth: RFCOMM ver 1.11
+May 20 17:31:16 dylan-asahi kernel: nvme-apple 27bcc0000.nvme: RTKit: syslog message: blog.c:102: New BlogBuf low 28
+May 20 17:34:34 dylan-asahi kernel: fbcon: Taking over console
+May 20 17:34:34 dylan-asahi kernel: Console: switching to colour frame buffer device 320x100
+```
+
+## Kernel log (last boot)
+```
+May 08 18:00:00 dylan-asahi kernel: Booting Linux on physical CPU 0x0000000000 [0x611f0221]
+May 08 18:00:00 dylan-asahi kernel: Linux version 6.8.9-404.asahi.fc40.aarch64+16k (mockbuild@a9224c00fa9c45cfb3a6e09702761c5d) (gcc (GCC) 14.1.1 20240507 (Red Hat 14.1.1-1), GNU ld version 2.41-37.fc40) #1 SMP PREEMPT_DYNAMIC Fri May 17 17:22:13 UTC 2024
+May 08 18:00:00 dylan-asahi kernel: KASLR enabled
+May 08 18:00:00 dylan-asahi kernel: random: crng init done
+May 08 18:00:00 dylan-asahi kernel: Machine model: Apple MacBook Air (M1, 2020)
+May 08 18:00:00 dylan-asahi kernel: efi: EFI v2.10 by Das U-Boot
+May 08 18:00:00 dylan-asahi kernel: efi: RTPROP=0xbcd5aa040 MOKvar=0xbcd53f000 MEMRESERVE=0xbcd515040 
+May 08 18:00:00 dylan-asahi kernel: OF: reserved mem: 0x0000000800a10000..0x0000000801433fff (10384 KiB) nomap non-reusable asc-firmware@800a10000
+May 08 18:00:00 dylan-asahi kernel: OF: reserved mem: 0x0000000801a54000..0x0000000801e83fff (4288 KiB) nomap non-reusable asc-firmware@801a54000
+May 08 18:00:00 dylan-asahi kernel: OF: reserved mem: 0x0000000bd26f8000..0x0000000bd28a3fff (1712 KiB) nomap non-reusable isp-heap
+May 08 18:00:00 dylan-asahi kernel: OF: reserved mem: 0x0000000bd58e4000..0x0000000bd863ffff (46448 KiB) nomap non-reusable framebuffer@bd58e4000
+May 08 18:00:00 dylan-asahi kernel: OF: reserved mem: 0x0000000bd8640000..0x0000000bd86fffff (768 KiB) nomap non-reusable region95@bd8640000
+May 08 18:00:00 dylan-asahi kernel: OF: reserved mem: 0x0000000bd8700000..0x0000000bd8703fff (16 KiB) nomap non-reusable region94@bd8700000
+May 08 18:00:00 dylan-asahi kernel: OF: reserved mem: 0x0000000bd8704000..0x0000000bd9703fff (16384 KiB) nomap non-reusable region57@bd8704000
+May 08 18:00:00 dylan-asahi kernel: OF: reserved mem: 0x0000000bd9704000..0x0000000bd9a03fff (3072 KiB) nomap non-reusable dcp_data@bd9704000
+May 08 18:00:00 dylan-asahi kernel: OF: reserved mem: 0x0000000bfff74000..0x0000000bfff77fff (16 KiB) nomap non-reusable uat-handoff
+May 08 18:00:00 dylan-asahi kernel: OF: reserved mem: 0x0000000bfff78000..0x0000000bfffb7fff (256 KiB) nomap non-reusable uat-pagetables
+May 08 18:00:00 dylan-asahi kernel: OF: reserved mem: 0x0000000bfffb8000..0x0000000bfffbbfff (16 KiB) nomap non-reusable uat-ttbs
+May 08 18:00:00 dylan-asahi kernel: NUMA: No NUMA configuration found
+May 08 18:00:00 dylan-asahi kernel: NUMA: Faking a node at [mem 0x0000000800a10000-0x0000000bfffbbfff]
+May 08 18:00:00 dylan-asahi kernel: NUMA: NODE_DATA [mem 0xbd1651180-0xbd1667fff]
+May 08 18:00:00 dylan-asahi kernel: Zone ranges:
+May 08 18:00:00 dylan-asahi kernel:   DMA      [mem 0x0000000800a10000-0x0000000bfffbbfff]
+May 08 18:00:00 dylan-asahi kernel:   DMA32    empty
+May 08 18:00:00 dylan-asahi kernel:   Normal   empty
+May 08 18:00:00 dylan-asahi kernel:   Device   empty
+May 08 18:00:00 dylan-asahi kernel: Movable zone start for each node
+May 08 18:00:00 dylan-asahi kernel: Early memory node ranges
+May 08 18:00:00 dylan-asahi kernel:   node   0: [mem 0x0000000800a10000-0x0000000801433fff]
+May 08 18:00:00 dylan-asahi kernel:   node   0: [mem 0x0000000801a54000-0x0000000801e83fff]
+May 08 18:00:00 dylan-asahi kernel:   node   0: [mem 0x0000000801f7c000-0x0000000803b6bfff]
+May 08 18:00:00 dylan-asahi kernel:   node   0: [mem 0x0000000803b6c000-0x0000000803c4bfff]
+May 08 18:00:00 dylan-asahi kernel:   node   0: [mem 0x0000000803c4c000-0x000000080599ffff]
+May 08 18:00:00 dylan-asahi kernel:   node   0: [mem 0x00000008059a0000-0x00000008059bffff]
+May 08 18:00:00 dylan-asahi kernel:   node   0: [mem 0x00000008059c0000-0x0000000bcd53bfff]
+May 08 18:00:00 dylan-asahi kernel:   node   0: [mem 0x0000000bcd53c000-0x0000000bcd53ffff]
+May 08 18:00:00 dylan-asahi kernel:   node   0: [mem 0x0000000bcd540000-0x0000000bcd583fff]
+May 08 18:00:00 dylan-asahi kernel:   node   0: [mem 0x0000000bcd584000-0x0000000bcd587fff]
+May 08 18:00:00 dylan-asahi kernel:   node   0: [mem 0x0000000bcd588000-0x0000000bcd5a7fff]
+May 08 18:00:00 dylan-asahi kernel:   node   0: [mem 0x0000000bcd5a8000-0x0000000bcd5cffff]
+May 08 18:00:00 dylan-asahi kernel:   node   0: [mem 0x0000000bcd5d0000-0x0000000bd260ffff]
+May 08 18:00:00 dylan-asahi kernel:   node   0: [mem 0x0000000bd2610000-0x0000000bd261ffff]
+May 08 18:00:00 dylan-asahi kernel:   node   0: [mem 0x0000000bd2620000-0x0000000bd26f3fff]
+May 08 18:00:00 dylan-asahi kernel:   node   0: [mem 0x0000000bd26f8000-0x0000000bd28a3fff]
+May 08 18:00:00 dylan-asahi kernel:   node   0: [mem 0x0000000bd58e4000-0x0000000bd9a03fff]
+May 08 18:00:00 dylan-asahi kernel:   node   0: [mem 0x0000000bfff74000-0x0000000bfffbbfff]
+May 08 18:00:00 dylan-asahi kernel: Initmem setup node 0 [mem 0x0000000800a10000-0x0000000bfffbbfff]
+May 08 18:00:00 dylan-asahi kernel: On node 0, zone DMA: 644 pages in unavailable ranges
+May 08 18:00:00 dylan-asahi kernel: On node 0, zone DMA: 392 pages in unavailable ranges
+May 08 18:00:00 dylan-asahi kernel: On node 0, zone DMA: 62 pages in unavailable ranges
+May 08 18:00:00 dylan-asahi kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+May 08 18:00:00 dylan-asahi kernel: On node 0, zone DMA: 3088 pages in unavailable ranges
+May 08 18:00:00 dylan-asahi kernel: On node 0, zone DMA: 14684 pages in unavailable ranges
+May 08 18:00:00 dylan-asahi kernel: On node 0, zone DMA: 17 pages in unavailable ranges
+May 08 18:00:00 dylan-asahi kernel: cma: Reserved 64 MiB at 0x0000000806000000 on node -1
+May 08 18:00:00 dylan-asahi kernel: percpu: Embedded 20 pages/cpu s196136 r8192 d123352 u327680
+May 08 18:00:00 dylan-asahi kernel: pcpu-alloc: s196136 r8192 d123352 u327680 alloc=20*16384
+May 08 18:00:00 dylan-asahi kernel: pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 [0] 4 [0] 5 [0] 6 [0] 7 
+May 08 18:00:00 dylan-asahi kernel: Detected VIPT I-cache on CPU0
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: Address authentication (IMP DEF algorithm)
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: Virtualization Host Extensions
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: Spectre-v4
+May 08 18:00:00 dylan-asahi kernel: alternatives: applying boot alternatives
+May 08 18:00:00 dylan-asahi kernel: Kernel command line: BOOT_IMAGE=(hd0,gpt5)/vmlinuz-6.8.9-404.asahi.fc40.aarch64+16k root=UUID=af1e21d4-61cc-422b-83e7-984e03b70881 ro rootflags=subvol=root rhgb quiet rootflags=subvol=root
+May 08 18:00:00 dylan-asahi kernel: Unknown kernel command line parameters "rhgb BOOT_IMAGE=(hd0,gpt5)/vmlinuz-6.8.9-404.asahi.fc40.aarch64+16k", will be passed to user space.
+May 08 18:00:00 dylan-asahi kernel: Dentry cache hash table entries: 2097152 (order: 10, 16777216 bytes, linear)
+May 08 18:00:00 dylan-asahi kernel: Inode-cache hash table entries: 1048576 (order: 9, 8388608 bytes, linear)
+May 08 18:00:00 dylan-asahi kernel: Fallback order for Node 0: 0 
+May 08 18:00:00 dylan-asahi kernel: Built 1 zonelists, mobility grouping on.  Total pages: 1001018
+May 08 18:00:00 dylan-asahi kernel: Policy zone: DMA
+May 08 18:00:00 dylan-asahi kernel: mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+May 08 18:00:00 dylan-asahi kernel: software IO TLB: SWIOTLB bounce buffer size adjusted to 15MB
+May 08 18:00:00 dylan-asahi kernel: software IO TLB: area num 8.
+May 08 18:00:00 dylan-asahi kernel: software IO TLB: SWIOTLB bounce buffer size roundup to 16MB
+May 08 18:00:00 dylan-asahi kernel: software IO TLB: mapped [mem 0x0000000bceb5c000-0x0000000bcfb5c000] (16MB)
+May 08 18:00:00 dylan-asahi kernel: Memory: 15716176K/16081792K available (20032K kernel code, 5396K rwdata, 16816K rodata, 12800K init, 10597K bss, 300080K reserved, 65536K cma-reserved)
+May 08 18:00:00 dylan-asahi kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+May 08 18:00:00 dylan-asahi kernel: ftrace: allocating 62294 entries in 61 pages
+May 08 18:00:00 dylan-asahi kernel: ftrace: allocated 61 pages with 5 groups
+May 08 18:00:00 dylan-asahi kernel: trace event string verifier disabled
+May 08 18:00:00 dylan-asahi kernel: Dynamic Preempt: voluntary
+May 08 18:00:00 dylan-asahi kernel: rcu: Preemptible hierarchical RCU implementation.
+May 08 18:00:00 dylan-asahi kernel: rcu:         RCU restricting CPUs from NR_CPUS=4096 to nr_cpu_ids=8.
+May 08 18:00:00 dylan-asahi kernel:         Trampoline variant of Tasks RCU enabled.
+May 08 18:00:00 dylan-asahi kernel:         Rude variant of Tasks RCU enabled.
+May 08 18:00:00 dylan-asahi kernel:         Tracing variant of Tasks RCU enabled.
+May 08 18:00:00 dylan-asahi kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+May 08 18:00:00 dylan-asahi kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=8
+May 08 18:00:00 dylan-asahi kernel: NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0
+May 08 18:00:00 dylan-asahi kernel: Root IRQ handler: aic_handle_irq
+May 08 18:00:00 dylan-asahi kernel: Root FIQ handler: aic_handle_fiq
+May 08 18:00:00 dylan-asahi kernel: irq_apple_aic: Using Fast IPIs
+May 08 18:00:00 dylan-asahi kernel: irq_apple_aic: Initialized with 896/1024 IRQs * 1/1 die(s), 7 FIQs, 32 vIPIs
+May 08 18:00:00 dylan-asahi kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+May 08 18:00:00 dylan-asahi kernel: arch_timer: cp15 timer(s) running at 24.00MHz (phys).
+May 08 18:00:00 dylan-asahi kernel: clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x588fe9dc0, max_idle_ns: 440795202592 ns
+May 08 18:00:00 dylan-asahi kernel: sched_clock: 56 bits at 24MHz, resolution 41ns, wraps every 4398046511097ns
+May 08 18:00:00 dylan-asahi kernel: kfence: initialized - using 8388608 bytes for 255 objects at 0x(____ptrval____)-0x(____ptrval____)
+May 08 18:00:00 dylan-asahi kernel: Console: colour dummy device 80x25
+May 08 18:00:00 dylan-asahi kernel: printk: legacy console [tty0] enabled
+May 08 18:00:00 dylan-asahi kernel: Calibrating delay loop (skipped), value calculated using timer frequency.. 48.00 BogoMIPS (lpj=24000)
+May 08 18:00:00 dylan-asahi kernel: pid_max: default: 32768 minimum: 301
+May 08 18:00:00 dylan-asahi kernel: LSM: initializing lsm=lockdown,capability,yama,selinux,bpf,landlock,integrity
+May 08 18:00:00 dylan-asahi kernel: Yama: becoming mindful.
+May 08 18:00:00 dylan-asahi kernel: SELinux:  Initializing.
+May 08 18:00:00 dylan-asahi kernel: LSM support for eBPF active
+May 08 18:00:00 dylan-asahi kernel: landlock: Up and running.
+May 08 18:00:00 dylan-asahi kernel: Mount-cache hash table entries: 32768 (order: 4, 262144 bytes, linear)
+May 08 18:00:00 dylan-asahi kernel: Mountpoint-cache hash table entries: 32768 (order: 4, 262144 bytes, linear)
+May 08 18:00:00 dylan-asahi kernel: RCU Tasks: Setting shift to 3 and lim to 1 rcu_task_cb_adjust=1.
+May 08 18:00:00 dylan-asahi kernel: RCU Tasks Rude: Setting shift to 3 and lim to 1 rcu_task_cb_adjust=1.
+May 08 18:00:00 dylan-asahi kernel: RCU Tasks Trace: Setting shift to 3 and lim to 1 rcu_task_cb_adjust=1.
+May 08 18:00:00 dylan-asahi kernel: rcu: Hierarchical SRCU implementation.
+May 08 18:00:00 dylan-asahi kernel: rcu:         Max phase no-delay instances is 400.
+May 08 18:00:00 dylan-asahi kernel: Remapping and enabling EFI services.
+May 08 18:00:00 dylan-asahi kernel: smp: Bringing up secondary CPUs ...
+May 08 18:00:00 dylan-asahi kernel: Detected VIPT I-cache on CPU1
+May 08 18:00:00 dylan-asahi kernel: CPU1: Booted secondary processor 0x0000000001 [0x611f0221]
+May 08 18:00:00 dylan-asahi kernel: Detected VIPT I-cache on CPU2
+May 08 18:00:00 dylan-asahi kernel: CPU2: Booted secondary processor 0x0000000002 [0x611f0221]
+May 08 18:00:00 dylan-asahi kernel: Detected VIPT I-cache on CPU3
+May 08 18:00:00 dylan-asahi kernel: CPU3: Booted secondary processor 0x0000000003 [0x611f0221]
+May 08 18:00:00 dylan-asahi kernel: Detected VIPT I-cache on CPU4
+May 08 18:00:00 dylan-asahi kernel: CPU4: Booted secondary processor 0x0000010100 [0x611f0231]
+May 08 18:00:00 dylan-asahi kernel: Detected VIPT I-cache on CPU5
+May 08 18:00:00 dylan-asahi kernel: CPU5: Booted secondary processor 0x0000010101 [0x611f0231]
+May 08 18:00:00 dylan-asahi kernel: Detected VIPT I-cache on CPU6
+May 08 18:00:00 dylan-asahi kernel: CPU6: Booted secondary processor 0x0000010102 [0x611f0231]
+May 08 18:00:00 dylan-asahi kernel: Detected VIPT I-cache on CPU7
+May 08 18:00:00 dylan-asahi kernel: CPU7: Booted secondary processor 0x0000010103 [0x611f0231]
+May 08 18:00:00 dylan-asahi kernel: smp: Brought up 1 node, 8 CPUs
+May 08 18:00:00 dylan-asahi kernel: SMP: Total of 8 processors activated.
+May 08 18:00:00 dylan-asahi kernel: CPU: All CPU(s) started at EL2
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: ARMv8.4 Translation Table Level
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: Data cache clean to the PoU not required for I/D coherence
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: Common not Private translations
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: CRC32 instructions
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: Data cache clean to Point of Deep Persistence
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: Data cache clean to Point of Persistence
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: Data independent timing control (DIT)
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: E0PD
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: Enhanced Virtualization Traps
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: Generic authentication (IMP DEF algorithm)
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: RCpc load-acquire (LDAPR)
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: LSE atomic instructions
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: Privileged Access Never
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: RAS Extension Support
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: Speculation barrier (SB)
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: Stage-2 Force Write-Back
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: TLB range maintenance instructions
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: TSO memory model (Apple)
+May 08 18:00:00 dylan-asahi kernel: CPU features: detected: Speculative Store Bypassing Safe (SSBS)
+May 08 18:00:00 dylan-asahi kernel: alternatives: applying system-wide alternatives
+May 08 18:00:00 dylan-asahi kernel: devtmpfs: initialized
+May 08 18:00:00 dylan-asahi kernel: setend instruction emulation is not supported on this system
+May 08 18:00:00 dylan-asahi kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+May 08 18:00:00 dylan-asahi kernel: futex hash table entries: 2048 (order: 3, 131072 bytes, linear)
+May 08 18:00:00 dylan-asahi kernel: pinctrl core: initialized pinctrl subsystem
+May 08 18:00:00 dylan-asahi kernel: DMI not present or invalid.
+May 08 18:00:00 dylan-asahi kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+May 08 18:00:00 dylan-asahi kernel: DMA: preallocated 2048 KiB GFP_KERNEL pool for atomic allocations
+May 08 18:00:00 dylan-asahi kernel: DMA: preallocated 2048 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+May 08 18:00:00 dylan-asahi kernel: DMA: preallocated 2048 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+May 08 18:00:00 dylan-asahi kernel: audit: initializing netlink subsys (disabled)
+May 08 18:00:00 dylan-asahi kernel: audit: type=2000 audit(0.009:1): state=initialized audit_enabled=0 res=1
+May 08 18:00:00 dylan-asahi kernel: thermal_sys: Registered thermal governor 'fair_share'
+May 08 18:00:00 dylan-asahi kernel: thermal_sys: Registered thermal governor 'step_wise'
+May 08 18:00:00 dylan-asahi kernel: thermal_sys: Registered thermal governor 'user_space'
+May 08 18:00:00 dylan-asahi kernel: cpuidle: using governor menu
+May 08 18:00:00 dylan-asahi kernel: hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.
+May 08 18:00:00 dylan-asahi kernel: ASID allocator initialised with 256 entries
+May 08 18:00:00 dylan-asahi kernel: Serial: AMBA PL011 UART driver
+May 08 18:00:00 dylan-asahi kernel: platform 382280000.usb: Fixed dependency cycle(s) with /soc/i2c@235010000/usb-pd@38/connector
+May 08 18:00:00 dylan-asahi kernel: platform 382280000.usb: Fixed dependency cycle(s) with /soc/phy@383000000
+May 08 18:00:00 dylan-asahi kernel: platform 382280000.usb: Fixed dependency cycle(s) with /soc/phy@383000000
+May 08 18:00:00 dylan-asahi kernel: platform 383000000.phy: Fixed dependency cycle(s) with /soc/i2c@235010000/usb-pd@38/connector
+May 08 18:00:00 dylan-asahi kernel: platform 502280000.usb: Fixed dependency cycle(s) with /soc/i2c@235010000/usb-pd@3f/connector
+May 08 18:00:00 dylan-asahi kernel: platform 502280000.usb: Fixed dependency cycle(s) with /soc/phy@503000000
+May 08 18:00:00 dylan-asahi kernel: platform 502280000.usb: Fixed dependency cycle(s) with /soc/phy@503000000
+May 08 18:00:00 dylan-asahi kernel: platform 503000000.phy: Fixed dependency cycle(s) with /soc/i2c@235010000/usb-pd@3f/connector
+May 08 18:00:00 dylan-asahi kernel: platform 690000000.pcie: Fixed dependency cycle(s) with /soc/pcie@690000000
+May 08 18:00:00 dylan-asahi kernel: Modules: 2G module region forced by RANDOMIZE_MODULE_REGION_FULL
+May 08 18:00:00 dylan-asahi kernel: Modules: 0 pages in range for non-PLT usage
+May 08 18:00:00 dylan-asahi kernel: Modules: 126940 pages in range for PLT usage
+May 08 18:00:00 dylan-asahi kernel: HugeTLB: registered 1.00 GiB page size, pre-allocated 0 pages
+May 08 18:00:00 dylan-asahi kernel: HugeTLB: 0 KiB vmemmap can be freed for a 1.00 GiB page
+May 08 18:00:00 dylan-asahi kernel: HugeTLB: registered 32.0 MiB page size, pre-allocated 0 pages
+May 08 18:00:00 dylan-asahi kernel: HugeTLB: 0 KiB vmemmap can be freed for a 32.0 MiB page
+May 08 18:00:00 dylan-asahi kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+May 08 18:00:00 dylan-asahi kernel: HugeTLB: 0 KiB vmemmap can be freed for a 2.00 MiB page
+May 08 18:00:00 dylan-asahi kernel: cryptd: max_cpu_qlen set to 1000
+May 08 18:00:00 dylan-asahi kernel: raid6: skipped pq benchmark and selected neonx8
+May 08 18:00:00 dylan-asahi kernel: raid6: using neon recovery algorithm
+May 08 18:00:00 dylan-asahi kernel: ACPI: Interpreter disabled.
+May 08 18:00:00 dylan-asahi kernel: iommu: Default domain type: Translated
+May 08 18:00:00 dylan-asahi kernel: iommu: DMA domain TLB invalidation policy: lazy mode
+May 08 18:00:00 dylan-asahi kernel: SCSI subsystem initialized
+May 08 18:00:00 dylan-asahi kernel: libata version 3.00 loaded.
+May 08 18:00:00 dylan-asahi kernel: usbcore: registered new interface driver usbfs
+May 08 18:00:00 dylan-asahi kernel: usbcore: registered new interface driver hub
+May 08 18:00:00 dylan-asahi kernel: usbcore: registered new device driver usb
+May 08 18:00:00 dylan-asahi kernel: pps_core: LinuxPPS API ver. 1 registered
+May 08 18:00:00 dylan-asahi kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+May 08 18:00:00 dylan-asahi kernel: PTP clock support registered
+May 08 18:00:00 dylan-asahi kernel: EDAC MC: Ver: 3.0.0
+May 08 18:00:00 dylan-asahi kernel: scmi_core: SCMI protocol bus registered
+May 08 18:00:00 dylan-asahi kernel: efivars: Registered efivars operations
+May 08 18:00:00 dylan-asahi kernel: NetLabel: Initializing
+May 08 18:00:00 dylan-asahi kernel: NetLabel:  domain hash size = 128
+May 08 18:00:00 dylan-asahi kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+May 08 18:00:00 dylan-asahi kernel: NetLabel:  unlabeled traffic allowed by default
+May 08 18:00:00 dylan-asahi kernel: mctp: management component transport protocol core
+May 08 18:00:00 dylan-asahi kernel: NET: Registered PF_MCTP protocol family
+May 08 18:00:00 dylan-asahi kernel: vgaarb: loaded
+May 08 18:00:00 dylan-asahi kernel: clocksource: Switched to clocksource arch_sys_counter
+May 08 18:00:00 dylan-asahi kernel: VFS: Disk quotas dquot_6.6.0
+May 08 18:00:00 dylan-asahi kernel: VFS: Dquot-cache hash table entries: 2048 (order 0, 16384 bytes)
+May 08 18:00:00 dylan-asahi kernel: pnp: PnP ACPI: disabled
+May 08 18:00:00 dylan-asahi kernel: NET: Registered PF_INET protocol family
+May 08 18:00:00 dylan-asahi kernel: IP idents hash table entries: 262144 (order: 7, 2097152 bytes, linear)
+May 08 18:00:00 dylan-asahi kernel: tcp_listen_portaddr_hash hash table entries: 8192 (order: 3, 131072 bytes, linear)
+May 08 18:00:00 dylan-asahi kernel: Table-perturb hash table entries: 65536 (order: 4, 262144 bytes, linear)
+May 08 18:00:00 dylan-asahi kernel: TCP established hash table entries: 131072 (order: 6, 1048576 bytes, linear)
+May 08 18:00:00 dylan-asahi kernel: TCP bind hash table entries: 65536 (order: 7, 2097152 bytes, linear)
+May 08 18:00:00 dylan-asahi kernel: TCP: Hash tables configured (established 131072 bind 65536)
+May 08 18:00:00 dylan-asahi kernel: MPTCP token hash table entries: 16384 (order: 4, 393216 bytes, linear)
+May 08 18:00:00 dylan-asahi kernel: UDP hash table entries: 8192 (order: 4, 262144 bytes, linear)
+May 08 18:00:00 dylan-asahi kernel: UDP-Lite hash table entries: 8192 (order: 4, 262144 bytes, linear)
+May 08 18:00:00 dylan-asahi kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+May 08 18:00:00 dylan-asahi kernel: NET: Registered PF_XDP protocol family
+May 08 18:00:00 dylan-asahi kernel: PCI: CLS 0 bytes, default 64
+May 08 18:00:00 dylan-asahi kernel: Trying to unpack rootfs image as initramfs...
+May 08 18:00:00 dylan-asahi kernel: kvm [1]: IPA Size Limit: 36 bits (Reduced IPA size, limited VM/VMM compatibility)
+May 08 18:00:00 dylan-asahi kernel: kvm [1]: Non-architectural vgic, tainting kernel
+May 08 18:00:00 dylan-asahi kernel: kvm [1]: GICv3: no GICV resource entry
+May 08 18:00:00 dylan-asahi kernel: kvm [1]: disabling GICv2 emulation
+May 08 18:00:00 dylan-asahi kernel: kvm [1]: GICv3 with broken locally generated SEI
+May 08 18:00:00 dylan-asahi kernel: kvm [1]: GICv3 sysreg trapping enabled ([G0G1D], reduced performance)
+May 08 18:00:00 dylan-asahi kernel: kvm [1]: GIC system register CPU interface enabled
+May 08 18:00:00 dylan-asahi kernel: kvm [1]: vgic interrupt IRQ33
+May 08 18:00:00 dylan-asahi kernel: kvm [1]: VHE mode initialized successfully
+May 08 18:00:00 dylan-asahi kernel: Initialise system trusted keyrings
+May 08 18:00:00 dylan-asahi kernel: Key type blacklist registered
+May 08 18:00:00 dylan-asahi kernel: workingset: timestamp_bits=37 max_order=20 bucket_order=0
+May 08 18:00:00 dylan-asahi kernel: zbud: loaded
+May 08 18:00:00 dylan-asahi kernel: integrity: Platform Keyring initialized
+May 08 18:00:00 dylan-asahi kernel: integrity: Machine keyring initialized
+May 08 18:00:00 dylan-asahi kernel: NET: Registered PF_ALG protocol family
+May 08 18:00:00 dylan-asahi kernel: xor: measuring software checksum speed
+May 08 18:00:00 dylan-asahi kernel:    8regs           : 26794 MB/sec
+May 08 18:00:00 dylan-asahi kernel:    32regs          : 26461 MB/sec
+May 08 18:00:00 dylan-asahi kernel:    arm64_neon      : 31826 MB/sec
+May 08 18:00:00 dylan-asahi kernel: xor: using function: arm64_neon (31826 MB/sec)
+May 08 18:00:00 dylan-asahi kernel: Key type asymmetric registered
+May 08 18:00:00 dylan-asahi kernel: Asymmetric key parser 'x509' registered
+May 08 18:00:00 dylan-asahi kernel: Freeing initrd memory: 24064K
+May 08 18:00:00 dylan-asahi kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 244)
+May 08 18:00:00 dylan-asahi kernel: io scheduler mq-deadline registered
+May 08 18:00:00 dylan-asahi kernel: io scheduler kyber registered
+May 08 18:00:00 dylan-asahi kernel: io scheduler bfq registered
+May 08 18:00:00 dylan-asahi kernel: atomic64_test: passed
+May 08 18:00:00 dylan-asahi kernel: apple-pmgr-pwrstate 23d280000.power-management:power-controller@78: always-on domain msg is not on at boot
+May 08 18:00:00 dylan-asahi kernel: Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+May 08 18:00:00 dylan-asahi kernel: msm_serial: driver initialized
+May 08 18:00:00 dylan-asahi kernel: 235200000.serial: ttySAC0 at MMIO 0x235200000 (irq = 42, base_baud = 0) is a APPLE S5L
+May 08 18:00:00 dylan-asahi kernel: 235208000.serial: ttySAC2 at MMIO 0x235208000 (irq = 43, base_baud = 0) is a APPLE S5L
+May 08 18:00:00 dylan-asahi kernel: SuperH (H)SCI(F) driver initialized
+May 08 18:00:00 dylan-asahi kernel: usbcore: registered new interface driver usbserial_generic
+May 08 18:00:00 dylan-asahi kernel: usbserial: USB Serial support registered for generic
+May 08 18:00:00 dylan-asahi kernel: mousedev: PS/2 mouse device common for all mice
+May 08 18:00:00 dylan-asahi kernel: device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+May 08 18:00:00 dylan-asahi kernel: device-mapper: uevent: version 1.0.3
+May 08 18:00:00 dylan-asahi kernel: device-mapper: ioctl: 4.48.0-ioctl (2023-03-01) initialised: dm-devel@redhat.com
+May 08 18:00:00 dylan-asahi kernel: ledtrig-cpu: registered to indicate activity on CPUs
+May 08 18:00:00 dylan-asahi kernel: hid: raw HID events driver (C) Jiri Kosina
+May 08 18:00:00 dylan-asahi kernel: usbcore: registered new interface driver usbhid
+May 08 18:00:00 dylan-asahi kernel: usbhid: USB HID core driver
+May 08 18:00:00 dylan-asahi kernel: hw perfevents: enabled with apple_icestorm_pmu PMU driver, 10 counters available
+May 08 18:00:00 dylan-asahi kernel: hw perfevents: enabled with apple_firestorm_pmu PMU driver, 10 counters available
+May 08 18:00:00 dylan-asahi kernel: drop_monitor: Initializing network drop monitor service
+May 08 18:00:00 dylan-asahi kernel: Initializing XFRM netlink socket
+May 08 18:00:00 dylan-asahi kernel: NET: Registered PF_INET6 protocol family
+May 08 18:00:00 dylan-asahi kernel: Segment Routing with IPv6
+May 08 18:00:00 dylan-asahi kernel: RPL Segment Routing with IPv6
+May 08 18:00:00 dylan-asahi kernel: In-situ OAM (IOAM) with IPv6
+May 08 18:00:00 dylan-asahi kernel: mip6: Mobile IPv6
+May 08 18:00:00 dylan-asahi kernel: NET: Registered PF_PACKET protocol family
+May 08 18:00:00 dylan-asahi kernel: registered taskstats version 1
+May 08 18:00:00 dylan-asahi kernel: Loading compiled-in X.509 certificates
+May 08 18:00:00 dylan-asahi kernel: Loaded X.509 cert 'Fedora kernel signing key: 29891fc72062ab5f787424e3c1ba2742c8f5b4f6'
+May 08 18:00:00 dylan-asahi kernel: page_owner is disabled
+May 08 18:00:00 dylan-asahi kernel: Key type .fscrypt registered
+May 08 18:00:00 dylan-asahi kernel: Key type fscrypt-provisioning registered
+May 08 18:00:00 dylan-asahi kernel: Btrfs loaded, zoned=yes, fsverity=yes
+May 08 18:00:00 dylan-asahi kernel: Key type big_key registered
+May 08 18:00:00 dylan-asahi kernel: Key type encrypted registered
+May 08 18:00:00 dylan-asahi kernel: ima: secureboot mode disabled
+May 08 18:00:00 dylan-asahi kernel: ima: No TPM chip found, activating TPM-bypass!
+May 08 18:00:00 dylan-asahi kernel: Loading compiled-in module X.509 certificates
+May 08 18:00:00 dylan-asahi kernel: Loaded X.509 cert 'Fedora kernel signing key: 29891fc72062ab5f787424e3c1ba2742c8f5b4f6'
+May 08 18:00:00 dylan-asahi kernel: ima: Allocated hash algorithm: sha256
+May 08 18:00:00 dylan-asahi kernel: ima: No architecture policies found
+May 08 18:00:00 dylan-asahi kernel: evm: Initialising EVM extended attributes:
+May 08 18:00:00 dylan-asahi kernel: evm: security.selinux
+May 08 18:00:00 dylan-asahi kernel: evm: security.SMACK64 (disabled)
+May 08 18:00:00 dylan-asahi kernel: evm: security.SMACK64EXEC (disabled)
+May 08 18:00:00 dylan-asahi kernel: evm: security.SMACK64TRANSMUTE (disabled)
+May 08 18:00:00 dylan-asahi kernel: evm: security.SMACK64MMAP (disabled)
+May 08 18:00:00 dylan-asahi kernel: evm: security.apparmor (disabled)
+May 08 18:00:00 dylan-asahi kernel: evm: security.ima
+May 08 18:00:00 dylan-asahi kernel: evm: security.capability
+May 08 18:00:00 dylan-asahi kernel: evm: HMAC attrs: 0x1
+May 08 18:00:00 dylan-asahi kernel: alg: No test for 842 (842-scomp)
+May 08 18:00:00 dylan-asahi kernel: alg: No test for 842 (842-generic)
+May 08 18:00:00 dylan-asahi kernel: [drm] Initialized simpledrm 1.0.0 20200625 for bd58e4000.framebuffer on minor 0
+May 08 18:00:00 dylan-asahi kernel: fbcon: Deferring console take-over
+May 08 18:00:00 dylan-asahi kernel: simple-framebuffer bd58e4000.framebuffer: [drm] fb0: simpledrmdrmfb frame buffer device
+May 08 18:00:00 dylan-asahi kernel: clk: Disabling unused clocks
+May 08 18:00:00 dylan-asahi kernel: Freeing unused kernel memory: 12800K
+May 08 18:00:00 dylan-asahi kernel: Checked W+X mappings: passed, no W+X pages found
+May 08 18:00:00 dylan-asahi kernel: Run /init as init process
+May 08 18:00:00 dylan-asahi kernel:   with arguments:
+May 08 18:00:00 dylan-asahi kernel:     /init
+May 08 18:00:00 dylan-asahi kernel:     rhgb
+May 08 18:00:00 dylan-asahi kernel:   with environment:
+May 08 18:00:00 dylan-asahi kernel:     HOME=/
+May 08 18:00:00 dylan-asahi kernel:     TERM=linux
+May 08 18:00:00 dylan-asahi kernel:     BOOT_IMAGE=(hd0,gpt5)/vmlinuz-6.8.9-404.asahi.fc40.aarch64+16k
+May 08 18:00:00 dylan-asahi kernel: i2c_dev: i2c /dev entries driver
+May 08 18:00:00 dylan-asahi kernel: fuse: init (API version 7.39)
+May 08 18:00:00 dylan-asahi kernel: alua: device handler registered
+May 08 18:00:00 dylan-asahi kernel: emc: device handler registered
+May 08 18:00:00 dylan-asahi kernel: rdac: device handler registered
+May 08 18:00:00 dylan-asahi kernel: nvme-apple 27bcc0000.nvme: RTKit: Initializing (protocol version 12)
+May 08 18:00:00 dylan-asahi kernel: nvme-apple 27bcc0000.nvme: RTKit: Unknown system endpoint: 0x0a
+May 08 18:00:00 dylan-asahi kernel: nvme-apple 27bcc0000.nvme: RTKit: syslog message: cmd.c:6416:  boot mode normal
+May 08 18:00:00 dylan-asahi kernel: hwmon hwmon0: temp1_input not attached to any thermal zone
+May 08 18:00:00 dylan-asahi kernel:  nvme0n1: p1 p2 p3 p4 p5 p6 p7
+May 08 18:00:00 dylan-asahi kernel: FAT-fs (nvme0n1p4): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+May 08 18:00:00 dylan-asahi kernel: apple-dart 228304000.iommu: DART [pagesize 4000, 16 streams, bypass support: 0, bypass forced: 0, locked: 0, AS 32 -> 36] initialized
+May 08 18:00:00 dylan-asahi kernel: apple-dart 231304000.iommu: Limiting DMA range to 0x0000000000000000..0x00000000fbffffff
+May 08 18:00:00 dylan-asahi kernel: apple-dart 231304000.iommu: DART [pagesize 4000, 16 streams, bypass support: 1, bypass forced: 0, locked: 1, AS 32 -> 36] initialized
+May 08 18:00:00 dylan-asahi kernel: apple-dart 23130c000.iommu: Limiting DMA range to 0x0000000f00000000..0x0000000ffbffffff
+May 08 18:00:00 dylan-asahi kernel: apple-dart 23130c000.iommu: DART [pagesize 4000, 16 streams, bypass support: 1, bypass forced: 0, locked: 1, AS 32 -> 36] initialized
+May 08 18:00:00 dylan-asahi kernel: apple-dart 22c0e8000.iommu: DART [pagesize 4000, 16 streams, bypass support: 1, bypass forced: 0, locked: 0, AS 32 -> 36] initialized
+May 08 18:00:00 dylan-asahi kernel: apple-dart 22c0f4000.iommu: DART [pagesize 4000, 16 streams, bypass support: 0, bypass forced: 0, locked: 0, AS 32 -> 36] initialized
+May 08 18:00:00 dylan-asahi kernel: apple-dart 22c0fc000.iommu: DART [pagesize 4000, 16 streams, bypass support: 0, bypass forced: 0, locked: 0, AS 32 -> 36] initialized
+May 08 18:00:00 dylan-asahi kernel: apple-dart 235004000.iommu: DART [pagesize 4000, 16 streams, bypass support: 1, bypass forced: 0, locked: 0, AS 32 -> 36] initialized
+May 08 18:00:00 dylan-asahi kernel: apple-dart 382f00000.iommu: DART [pagesize 4000, 16 streams, bypass support: 1, bypass forced: 0, locked: 0, AS 32 -> 36] initialized
+May 08 18:00:00 dylan-asahi kernel: apple-dart 382f80000.iommu: DART [pagesize 4000, 16 streams, bypass support: 1, bypass forced: 0, locked: 0, AS 32 -> 36] initialized
+May 08 18:00:00 dylan-asahi kernel: apple-dart 502f00000.iommu: DART [pagesize 4000, 16 streams, bypass support: 1, bypass forced: 0, locked: 0, AS 32 -> 36] initialized
+May 08 18:00:00 dylan-asahi kernel: apple-dart 502f80000.iommu: DART [pagesize 4000, 16 streams, bypass support: 1, bypass forced: 0, locked: 0, AS 32 -> 36] initialized
+May 08 18:00:00 dylan-asahi kernel: apple-dart 681008000.iommu: DART [pagesize 4000, 16 streams, bypass support: 0, bypass forced: 0, locked: 0, AS 32 -> 36] initialized
+May 08 18:00:00 dylan-asahi kernel: apple-admac 238200000.dma-controller: Adding to iommu group 0
+May 08 18:00:00 dylan-asahi kernel: apple-admac 238200000.dma-controller: Audio DMA Controller
+May 08 18:00:00 dylan-asahi kernel: apple-admac 238200000.dma-controller: imprint 2020130c TX cache 16384 RX cache 16384
+May 08 18:00:00 dylan-asahi kernel: apple-gpio-pinctrl 23c100000.pinctrl: No cache defaults, reading back from HW
+May 08 18:00:00 dylan-asahi kernel: macsmc-rtkit 23e400000.smc: RTKit: Initializing (protocol version 12)
+May 08 18:00:00 dylan-asahi kernel: macsmc-rtkit 23e400000.smc: Initialized (1525 keys #KEY (0x234b4559)..zSPp (0x7a535070))
+May 08 18:00:00 dylan-asahi kernel: apple-gpio-pinctrl 23d1f0000.pinctrl: No cache defaults, reading back from HW
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: Probing...
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: MMU: Initializing...
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: MMU: Initializing kernel page table
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: MMU: Creating kernel page tables
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: MMU: Kernel page tables created
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: MMU: Initializing TTBs
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: MMU: initialized
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: GPU ID registers: 0x4021100 0x40a04 0x30808 0x40404 0x1320300 0x101311
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: Core masks: [
+                                        0xff,
+                                        0x0,
+                                    ]
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: GPU Information:
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu:   Type: G13G
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu:   Clusters: 1
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu:   Cores: 8 (8)
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu:   Frags: 8 (8)
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu:   GPs: 4 (4)
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu:   Core masks: [
+                                        0xff,
+                                    ]
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu:   Active cores: 8
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: Getting configuration from device tree...
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: Dynamic configuration fetched
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: MMU: IO map: 0x204d00000:0x1c000 -> 0xffffffaf00000000
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: MMU: IO map: 0x20e100000:0x4000 -> 0xffffffaf00020000
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: MMU: IO map: 0x23b104000:0x4000 -> 0xffffffaf00028000
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: MMU: IO map: 0x204000000:0x20000 -> 0xffffffaf00030000
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: MMU: IO map: 0x23b2e8000:0x4000 -> 0xffffffaf00054000
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: MMU: IO map: 0x23bc00000:0x4000 -> 0xffffffaf0005c000
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: MMU: IO map: 0x204d80000:0x8000 -> 0xffffffaf00064000
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: MMU: IO map: 0x204d60000:0x4000 -> 0xffffffaf00070000
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: MMU: IO map: 0x200000000:0xd8000 -> 0xffffffaf00078000
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: MMU: IO map: 0x23b738000:0x4000 -> 0xffffffaf00154000
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: RTKit: Initializing (protocol version 12)
+May 08 18:00:00 dylan-asahi kernel: [drm] Initialized asahi 0.0.0 20220831 for 206400000.gpu on minor 1
+May 08 18:00:00 dylan-asahi kernel: asahi 206400000.gpu: Probed!
+May 08 18:00:00 dylan-asahi kernel: apple-gpio-pinctrl 23e820000.pinctrl: No cache defaults, reading back from HW
+May 08 18:00:00 dylan-asahi kernel: apple-gpio-pinctrl 24a820000.pinctrl: No cache defaults, reading back from HW
+May 08 18:00:00 dylan-asahi kernel: dwc3 382280000.usb: Adding to iommu group 1
+May 08 18:00:00 dylan-asahi kernel: macsmc-rtkit 23e400000.smc: Failed to create device link (0x180) with 23d0d9300.spmi:pmu@f:rtc_nvmem@d000
+May 08 18:00:00 dylan-asahi kernel: macsmc-rtkit 23e400000.smc: Failed to create device link (0x180) with 23d0d9300.spmi:pmu@f:rtc_nvmem@d000
+May 08 18:00:00 dylan-asahi kernel: macsmc-rtkit 23e400000.smc: Failed to create device link (0x180) with 23d0d9300.spmi:pmu@f:legacy_nvmem@9f00
+May 08 18:00:00 dylan-asahi kernel: macsmc-gpio macsmc-gpio: First GPIO key: gP01 (0x67503031)
+May 08 18:00:00 dylan-asahi kernel: gpio gpiochip4: (macsmc-pmu-gpio): not an immutable chip, please consider fixing it!
+May 08 18:00:00 dylan-asahi kernel: macsmc-rtc macsmc-rtc: registered as rtc0
+May 20 17:28:12 dylan-asahi kernel: macsmc-rtc macsmc-rtc: setting system clock to 2024-05-20T23:28:12 UTC (1716247692)
+May 20 17:28:12 dylan-asahi kernel: spi-hid-apple-of spi1.0: limiting the number of devices to mngt, kbd and mouse
+May 20 17:28:12 dylan-asahi kernel: input: Apple Internal Keyboard / Trackpad as /devices/platform/soc/23510c000.spi/spi_master/spi1/spi1.0/001C:05AC:0281.0002/input/input0
+May 20 17:28:12 dylan-asahi kernel: magicmouse 001C:05AC:0281.0002: input,hidraw0: SPI HID v9.35 Mouse [Apple Internal Keyboard / Trackpad] on spi1.0 (2)
+May 20 17:28:12 dylan-asahi kernel: input: Apple Internal Keyboard / Trackpad as /devices/platform/soc/23510c000.spi/spi_master/spi1/spi1.0/001C:05AC:0281.0001/input/input1
+May 20 17:28:12 dylan-asahi kernel: apple 001C:05AC:0281.0001: input,hidraw1: SPI HID v9.35 Keyboard [Apple Internal Keyboard / Trackpad] on spi1.0 (1)
+May 20 17:28:12 dylan-asahi kernel: macsmc-reboot macsmc-reboot: PMU logged 1 boot error(s) and 0 panic(s)
+May 20 17:28:12 dylan-asahi kernel: macsmc-reboot macsmc-reboot: Handling reboot and poweroff requests via SMC
+May 20 17:28:12 dylan-asahi kernel: pcie-apple 690000000.pcie: host bridge /soc/pcie@690000000 ranges:
+May 20 17:28:12 dylan-asahi kernel: pcie-apple 690000000.pcie:      MEM 0x06a0000000..0x06bfffffff -> 0x06a0000000
+May 20 17:28:12 dylan-asahi kernel: pcie-apple 690000000.pcie:      MEM 0x06c0000000..0x06ffffffff -> 0x00c0000000
+May 20 17:28:12 dylan-asahi kernel: pcie-apple 690000000.pcie: ECAM at [mem 0x690000000-0x690ffffff] for [bus 00-03]
+May 20 17:28:12 dylan-asahi kernel: pcie-apple 690000000.pcie: PCI host bridge to bus 0000:00
+May 20 17:28:12 dylan-asahi kernel: pci_bus 0000:00: root bus resource [bus 00-03]
+May 20 17:28:12 dylan-asahi kernel: pci_bus 0000:00: root bus resource [mem 0x6a0000000-0x6bfffffff pref]
+May 20 17:28:12 dylan-asahi kernel: pci_bus 0000:00: root bus resource [mem 0x6c0000000-0x6ffffffff] (bus address [0xc0000000-0xffffffff])
+May 20 17:28:12 dylan-asahi kernel: pci 0000:00:00.0: [106b:100c] type 01 class 0x060400 PCIe Root Port
+May 20 17:28:12 dylan-asahi kernel: pci 0000:00:00.0: PCI bridge to [bus 01]
+May 20 17:28:12 dylan-asahi kernel: pci 0000:00:00.0: PME# supported from D0 D3hot D3cold
+May 20 17:28:12 dylan-asahi kernel: pci 0000:00:00.0: PTM enabled (root), 16ns granularity
+May 20 17:28:12 dylan-asahi kernel: pci 0000:01:00.0: [14e4:4425] type 00 class 0x028000 PCIe Endpoint
+May 20 17:28:12 dylan-asahi kernel: pci 0000:01:00.0: BAR 0 [mem 0x00000000-0x0000ffff 64bit]
+May 20 17:28:12 dylan-asahi kernel: pci 0000:01:00.0: BAR 2 [mem 0x00000000-0x007fffff 64bit]
+May 20 17:28:12 dylan-asahi kernel: pci 0000:01:00.0: supports D1 D2
+May 20 17:28:12 dylan-asahi kernel: pci 0000:01:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+May 20 17:28:12 dylan-asahi kernel: pci 0000:01:00.1: [14e4:5f69] type 00 class 0x028000 PCIe Endpoint
+May 20 17:28:12 dylan-asahi kernel: pci 0000:01:00.1: BAR 0 [mem 0x00000000-0x00007fff 64bit]
+May 20 17:28:12 dylan-asahi kernel: pci 0000:01:00.1: BAR 2 [mem 0x00000000-0x003fffff 64bit]
+May 20 17:28:12 dylan-asahi kernel: pci 0000:01:00.1: supports D1 D2
+May 20 17:28:12 dylan-asahi kernel: pci 0000:01:00.1: PME# supported from D0 D1 D2 D3hot D3cold
+May 20 17:28:12 dylan-asahi kernel: pci_bus 0000:01: busn_res: [bus 01-03] end is updated to 01
+May 20 17:28:12 dylan-asahi kernel: pci 0000:00:00.0: bridge window [mem 0x6c0000000-0x6c0dfffff]: assigned
+May 20 17:28:12 dylan-asahi kernel: pci 0000:01:00.0: BAR 2 [mem 0x6c0000000-0x6c07fffff 64bit]: assigned
+May 20 17:28:12 dylan-asahi kernel: pci 0000:01:00.1: BAR 2 [mem 0x6c0800000-0x6c0bfffff 64bit]: assigned
+May 20 17:28:12 dylan-asahi kernel: pci 0000:01:00.0: BAR 0 [mem 0x6c0c00000-0x6c0c0ffff 64bit]: assigned
+May 20 17:28:12 dylan-asahi kernel: pci 0000:01:00.1: BAR 0 [mem 0x6c0c10000-0x6c0c17fff 64bit]: assigned
+May 20 17:28:12 dylan-asahi kernel: pci 0000:00:00.0: PCI bridge to [bus 01]
+May 20 17:28:12 dylan-asahi kernel: pci 0000:00:00.0:   bridge window [mem 0x6c0000000-0x6c0dfffff]
+May 20 17:28:12 dylan-asahi kernel: OF: /soc/pcie@690000000: no iommu-map translation for id 0x0 on (null)
+May 20 17:28:12 dylan-asahi kernel: pcieport 0000:00:00.0: PME: Signaling with IRQ 100
+May 20 17:28:12 dylan-asahi kernel: pcieport 0000:00:00.0: AER: enabled with IRQ 100
+May 20 17:28:12 dylan-asahi kernel: BTRFS: device label fedora devid 1 transid 92967 /dev/nvme0n1p6 scanned by mount (478)
+May 20 17:28:12 dylan-asahi kernel: BTRFS info (device nvme0n1p6): first mount of filesystem af1e21d4-61cc-422b-83e7-984e03b70881
+May 20 17:28:12 dylan-asahi kernel: BTRFS info (device nvme0n1p6): using crc32c (crc32c-generic) checksum algorithm
+May 20 17:28:12 dylan-asahi kernel: BTRFS info (device nvme0n1p6): forcing free space tree for sector size 4096 with page size 16384
+May 20 17:28:12 dylan-asahi kernel: BTRFS info (device nvme0n1p6): using free-space-tree
+May 20 17:28:12 dylan-asahi kernel: BTRFS warning (device nvme0n1p6): read-write for sector size 4096 with page size 16384 is experimental
+May 20 17:28:12 dylan-asahi kernel: BTRFS info (device nvme0n1p6): start tree-log replay
+May 20 17:28:12 dylan-asahi kernel: dwc3 502280000.usb: Adding to iommu group 2
+May 20 17:28:13 dylan-asahi kernel: fbcon: Taking over console
+May 20 17:28:13 dylan-asahi kernel: Console: switching to colour frame buffer device 320x100
+May 20 17:28:14 dylan-asahi kernel: audit: type=1404 audit(1716247693.633:2): enforcing=1 old_enforcing=0 auid=4294967295 ses=4294967295 enabled=1 old-enabled=1 lsm=selinux res=1
+May 20 17:28:14 dylan-asahi kernel: SELinux:  policy capability network_peer_controls=1
+May 20 17:28:14 dylan-asahi kernel: SELinux:  policy capability open_perms=1
+May 20 17:28:14 dylan-asahi kernel: SELinux:  policy capability extended_socket_class=1
+May 20 17:28:14 dylan-asahi kernel: SELinux:  policy capability always_check_network=0
+May 20 17:28:14 dylan-asahi kernel: SELinux:  policy capability cgroup_seclabel=1
+May 20 17:28:14 dylan-asahi kernel: SELinux:  policy capability nnp_nosuid_transition=1
+May 20 17:28:14 dylan-asahi kernel: SELinux:  policy capability genfs_seclabel_symlinks=1
+May 20 17:28:14 dylan-asahi kernel: SELinux:  policy capability ioctl_skip_cloexec=0
+May 20 17:28:14 dylan-asahi kernel: SELinux:  policy capability userspace_initial_context=0
+May 20 17:28:14 dylan-asahi kernel: audit: type=1403 audit(1716247693.718:3): auid=4294967295 ses=4294967295 lsm=selinux res=1
+May 20 17:28:14 dylan-asahi kernel: loop: module loaded
+May 20 17:28:14 dylan-asahi kernel: BTRFS info (device nvme0n1p6: state M): use zstd compression, level 1
+May 20 17:28:14 dylan-asahi kernel: audit: type=1130 audit(1716247694.429:4): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-network-generator comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 20 17:28:14 dylan-asahi kernel: audit: type=1130 audit(1716247694.430:5): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-remount-fs comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 20 17:28:14 dylan-asahi kernel: audit: type=1130 audit(1716247694.432:6): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-journald comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 20 17:28:14 dylan-asahi kernel: audit: type=1130 audit(1716247694.445:7): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=lvm2-monitor comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 20 17:28:14 dylan-asahi kernel: audit: type=1334 audit(1716247694.446:8): prog-id=36 op=LOAD
+May 20 17:28:14 dylan-asahi kernel: audit: type=1334 audit(1716247694.446:9): prog-id=37 op=LOAD
+May 20 17:28:14 dylan-asahi kernel: audit: type=1334 audit(1716247694.446:10): prog-id=38 op=LOAD
+May 20 17:28:15 dylan-asahi kernel: Adding 10485744k swap on /swapfile.  Priority:-2 extents:11 across:43515904k 
+May 20 17:28:15 dylan-asahi kernel: EXT4-fs (nvme0n1p5): recovery complete
+May 20 17:28:15 dylan-asahi kernel: EXT4-fs (nvme0n1p5): mounted filesystem 3d46e6b3-2808-4d00-ad32-0fd7bdbd6bd6 r/w with ordered data mode. Quota mode: none.
+May 20 17:28:15 dylan-asahi kernel: leds_pwm led-controller: failed to read period for kbd_backlight, default to off
+May 20 17:28:15 dylan-asahi kernel: cpu cpu0: EM: created perf domain
+May 20 17:28:15 dylan-asahi kernel: cpu cpu4: EM: created perf domain
+May 20 17:28:15 dylan-asahi kernel: mc: Linux media interface: v0.10
+May 20 17:28:15 dylan-asahi kernel: videodev: Linux video capture interface: v2.00
+May 20 17:28:15 dylan-asahi kernel: cs42l83 0-0048: supply VA not found, using dummy regulator
+May 20 17:28:15 dylan-asahi kernel: cs42l83 0-0048: supply VP not found, using dummy regulator
+May 20 17:28:15 dylan-asahi kernel: cs42l83 0-0048: supply VCP not found, using dummy regulator
+May 20 17:28:15 dylan-asahi kernel: cs42l83 0-0048: supply VD_FILT not found, using dummy regulator
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: Adding to iommu group 3
+May 20 17:28:15 dylan-asahi kernel: cs42l83 0-0048: supply VL not found, using dummy regulator
+May 20 17:28:15 dylan-asahi kernel: 1 fixed-partitions partitions found on MTD device spi0.0
+May 20 17:28:15 dylan-asahi kernel: Creating 1 MTD partitions on "spi0.0":
+May 20 17:28:15 dylan-asahi kernel: 0x000000700000-0x000000800000 : "nvram"
+May 20 17:28:15 dylan-asahi kernel: cs42l83 0-0048: Cirrus Logic CS42L83, Revision: B0
+May 20 17:28:15 dylan-asahi kernel: apple-drm soc:display-subsystem: Adding to iommu group 4
+May 20 17:28:15 dylan-asahi kernel: Console: switching to colour dummy device 80x25
+May 20 17:28:15 dylan-asahi kernel: input: Apple SMC power/lid events as /devices/platform/soc/23e400000.smc/macsmc-hid/input/input2
+May 20 17:28:15 dylan-asahi kernel: apple-isp 22a000000.isp: Adding to iommu group 5
+May 20 17:28:15 dylan-asahi kernel: apple-isp 22a000000.isp: ISP firmware-compat: 13.5 (FW: 13.5)
+May 20 17:28:15 dylan-asahi kernel: platform 231c00000.dcp:piodma: Adding to iommu group 6
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: Initializing (protocol version 12)
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: Unknown system endpoint: 0x0a
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: shmem_setup: iova: f00267000 -> pa: bd996b000 -> iomem: ffff800081fc3000
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: shmem_setup: iova: ffbffc000, buffer: ffff800081f30000
+May 20 17:28:15 dylan-asahi kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+May 20 17:28:15 dylan-asahi kernel: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+May 20 17:28:15 dylan-asahi kernel: Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: shmem_setup: iova: ffbff8000, buffer: ffff800081fe4000
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: shmem_setup: iova: f0025f000 -> pa: bd9963000 -> iomem: ffff800082003000
+May 20 17:28:15 dylan-asahi kernel: apple-drm soc:display-subsystem: bound 231c00000.dcp (ops dcp_comp_ops [apple_dcp])
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: ap_link.c:299: shared memory dva: 0xffbe00000 0xffffffff000e7000
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: ap_link.c:276: ap_link: IOMFB: DCP heap size: 0x1030000 [iBoot:0x1030000] [LinkService:0x0]
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: nifiedPipeline.cpp:4191: IOMFB: Could not find Backlight service
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: nifiedPipeline.cpp:4199: IOMFB: Could not find nvram service
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: nifiedPipeline.cpp:1838: virtual bool UnifiedPipeline::start_ios_gated(): Created AP Services
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: nifiedPipeline.cpp:1864: start_ios_gated: trigger pending HPD notification
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: cb_hotplug() connected:1, valid_mode:0
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: dcp_hotplug() connected:1 valid_mode:0 nr_modes:0
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: nifiedPipeline.cpp:1871: virtual bool UnifiedPipeline::start_ios_gated(): Flushed RTPs
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: PPipeDCP_H13P.cpp:11092: IOMFB updateFrequencies: minimum-frequency property not found, using getClockFrequency(0) instead.
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: nifiedPipeline.cpp:1356: set_device_enabled_gated: current state: 1, requested state: 1
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: PPipeDCP_H13P.cpp:11092: IOMFB updateFrequencies: minimum-frequency property not found, using getClockFrequency(0) instead.
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: PPipeDCP_H13P.cpp:10490: set_run_mode_safe: deferring: 2 -> 4
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: PPipeDCP_H13P.cpp:10395: virtual IOMFBStatus IOMFB::UPPipeDCP_H13P::ready_for_run_mode_change(IOMFB::AppleRegisterStream *): initiating deferred run mod
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: M3Hal_v1.cpp:197: IOMFB: load APT M3 IMem : size 0x7948
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: M3Hal_v1.cpp:197: IOMFB: load APT M3 DMem : size 0x6f60
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: CAHandler.cpp:188: IOMFB load_ca_data: Unrecognized data version 0 (expected 1 or 2)
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: UPPipe.cpp:3767: IOMFB read_pmu_data_sync: pmu ram read error (e00800d8)
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: PPipeDCP_H13P.cpp:14085: IOMFB Int RTBandwidth: program_M3_rt_config: Using Legacy, scratch 23b738014
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: PPipeDCP_H13P.cpp:14105: IOMFB Int RTBandwidth: using legacy. Doorbell 23bc3c000, bit 2
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: UPTSQManager.cpp:133: IOMFB: clearing M3 reset
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: UPTSQ_Hal_v1.cpp:349: IOMFB: timebase_offset = 4
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: AFK[ep:20]: new service system on channel 5
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: AFK[ep:20]: new service powerlog-service on channel 7
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: dpointInterface.cpp:606: [AFK][AFKMailboxSharedMemoryEndpointInterface:#63] if:1 inCmd:0 inResp:0 outRepErr:0 outCmdErr:0 t:502053389
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: dpointInterface.cpp:606: [AFK][AFKMailboxSharedMemoryEndpointInterface:#66] if:3 inCmd:0 inResp:0 outRepErr:0 outCmdErr:0 t:502055162
+May 20 17:28:15 dylan-asahi kernel: Bluetooth: Core ver 2.22
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: UPTSQManager.cpp:105: IOMFB: switch to normal mode succeeded
+May 20 17:28:15 dylan-asahi kernel: NET: Registered PF_BLUETOOTH protocol family
+May 20 17:28:15 dylan-asahi kernel: Bluetooth: HCI device and connection manager initialized
+May 20 17:28:15 dylan-asahi kernel: Bluetooth: HCI socket layer initialized
+May 20 17:28:15 dylan-asahi kernel: Bluetooth: L2CAP socket layer initialized
+May 20 17:28:15 dylan-asahi kernel: Bluetooth: SCO socket layer initialized
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: DCP booted
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: DCP is_main_display: 1
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: dcp_hotplug() connected:1 valid_mode:0 nr_modes:1
+May 20 17:28:15 dylan-asahi kernel: hci_bcm4377 0000:01:00.1: Adding to iommu group 7
+May 20 17:28:15 dylan-asahi kernel: usbcore: registered new interface driver brcmfmac
+May 20 17:28:15 dylan-asahi kernel: apple-isp 22a000000.isp: IPC surface iova: 0x1000000
+May 20 17:28:15 dylan-asahi kernel: apple-isp 22a000000.isp: Data surface iova: 0x101c000
+May 20 17:28:15 dylan-asahi kernel: brcmfmac 0000:01:00.0: Adding to iommu group 7
+May 20 17:28:15 dylan-asahi kernel: brcmfmac 0000:01:00.0: enabling device (0000 -> 0002)
+May 20 17:28:15 dylan-asahi kernel: input: MacBook Air J313 Headphone Jack as /devices/platform/sound/sound/card0/input3
+May 20 17:28:15 dylan-asahi kernel: brcmfmac: brcmf_fw_alloc_request: using brcm/brcmfmac4378b1-pcie for chip BCM4378/3
+May 20 17:28:15 dylan-asahi kernel: brcmfmac 0000:01:00.0: Direct firmware load for brcm/brcmfmac4378b1-pcie.apple,shikoku-RASP-u-6.5-X0.bin failed with error -2
+May 20 17:28:15 dylan-asahi kernel: brcmfmac 0000:01:00.0: Direct firmware load for brcm/brcmfmac4378b1-pcie.apple,shikoku-RASP-u-6.5.bin failed with error -2
+May 20 17:28:15 dylan-asahi kernel: brcmfmac 0000:01:00.0: Direct firmware load for brcm/brcmfmac4378b1-pcie.apple,shikoku-RASP-u.bin failed with error -2
+May 20 17:28:15 dylan-asahi kernel: brcmfmac 0000:01:00.0: Direct firmware load for brcm/brcmfmac4378b1-pcie.apple,shikoku-RASP.bin failed with error -2
+May 20 17:28:15 dylan-asahi kernel: brcmfmac 0000:01:00.0: Direct firmware load for brcm/brcmfmac4378b1-pcie.apple,shikoku-X0.bin failed with error -2
+May 20 17:28:15 dylan-asahi kernel: brcmfmac 0000:01:00.0: Direct firmware load for brcm/brcmfmac4378b1-pcie.sig failed with error -2
+May 20 17:28:15 dylan-asahi kernel: [drm] Initialized apple 1.0.0 20221106 for soc:display-subsystem on minor 2
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: dcp_poweron() starting
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: set_digital_out_mode(color:1 timing:2) "2560x1600": 60 266630 2560 2568 2600 2642 1600 1632 1640 1682 0x48 0x0
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: set_digital_out_mode() color mode depth:8 format:0 colorimetry:16 eotf:0 range:0
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: nifiedPipeline.cpp:7462: set_digital_out_mode: Modeset requested for colorID: 1, timingID: 2
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: PPipeDCP_H13P.cpp:18011: Dual pipe disabled offset 0
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: RTKit: syslog message: nifiedPipeline.cpp:7465: set_digital_out_mode returned 8000000b
+May 20 17:28:15 dylan-asahi kernel: apple-dcp 231c00000.dcp: set_digital_out_mode finished:8499
+May 20 17:28:15 dylan-asahi kernel: Console: switching to colour frame buffer device 320x100
+May 20 17:28:15 dylan-asahi kernel: apple-drm soc:display-subsystem: [drm] fb0: appledrmfb frame buffer device
+May 20 17:28:15 dylan-asahi kernel: FAT-fs (nvme0n1p4): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+May 20 17:28:15 dylan-asahi kernel: hci_bcm4377 0000:01:00.1: enabling device (0000 -> 0002)
+May 20 17:28:15 dylan-asahi kernel: RPC: Registered named UNIX socket transport module.
+May 20 17:28:15 dylan-asahi kernel: RPC: Registered udp transport module.
+May 20 17:28:15 dylan-asahi kernel: RPC: Registered tcp transport module.
+May 20 17:28:15 dylan-asahi kernel: RPC: Registered tcp-with-tls transport module.
+May 20 17:28:15 dylan-asahi kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+May 20 17:28:15 dylan-asahi kernel: snd-soc-macaudio sound: Speaker volumes unlocked
+May 20 17:28:15 dylan-asahi kernel: brcmfmac: brcmf_c_process_txcap_blob: TxCap blob found, loading
+May 20 17:28:15 dylan-asahi kernel: brcmfmac: brcmf_c_process_cal_blob: Calibration blob provided by platform, loading
+May 20 17:28:15 dylan-asahi kernel: brcmfmac: brcmf_c_preinit_dcmds: Firmware: BCM4378/3 wl0: May 13 2023 07:20:48 version 18.20.383.15.7.8.150 FWID 01-b37727a5
+May 20 17:28:16 dylan-asahi kernel: Bluetooth: BNEP (Ethernet Emulation) ver 1.3
+May 20 17:28:16 dylan-asahi kernel: Bluetooth: BNEP filters: protocol multicast
+May 20 17:28:16 dylan-asahi kernel: Bluetooth: BNEP socket layer initialized
+May 20 17:28:16 dylan-asahi kernel: NET: Registered PF_QIPCRTR protocol family
+May 20 17:28:16 dylan-asahi kernel: brcmfmac 0000:01:00.0 wlp1s0f0: renamed from wlan0
+May 20 17:28:16 dylan-asahi kernel: Bluetooth: hci0: HCI LE Coded PHY feature bit is set, but its usage is not supported.
+May 20 17:28:16 dylan-asahi kernel: Bluetooth: MGMT ver 1.22
+May 20 17:28:16 dylan-asahi kernel: apple-isp: CISP_CMD_CONFIG_GET: 
+May 20 17:28:16 dylan-asahi kernel: apple-isp: 00000000 00000003 016e3600 00000001 0000000a 00000000 00000001
+May 20 17:28:16 dylan-asahi kernel: apple-isp 22a000000.isp: found sensor 248 CC21125014BPM0D7R on ch 0
+May 20 17:28:16 dylan-asahi kernel: apple-isp: ch: CISP_CMD_CH_INFO_GET: 0
+May 20 17:28:16 dylan-asahi kernel: apple-isp: ch: 00000000 0000010d 00000000 07db0001 00050024 00040007 00000005 00000001
+May 20 17:28:16 dylan-asahi kernel: apple-isp: ch: 00000248 00000007 00000001 00000001 00000000 00000000 00000000 00000000
+May 20 17:28:16 dylan-asahi kernel: apple-isp: ch: 00000000 00000000 00000000 00010000 00000001 00000000 00000004 00000020
+May 20 17:28:16 dylan-asahi kernel: apple-isp: ch: 00000001 00000000 00004680 00000040 00000001 00000002 00004000 00000040
+May 20 17:28:16 dylan-asahi kernel: apple-isp: ch: 00000001 00000000 00000000 00000036 00000000 00000000 000f4240 434300a0
+May 20 17:28:16 dylan-asahi kernel: apple-isp: ch: 32313132 34313035 304d5042 00523744 00000000 00000008 00000000 00000000
+May 20 17:28:16 dylan-asahi kernel: apple-isp: ch: 00000004 00000000 00000000 00000000 00000000 00000000 00000000 00ff0000
+May 20 17:28:16 dylan-asahi kernel: apple-isp: ch: 00000c00 00000000 0000001c 00000680 00000004 00000004 00000000 00000000
+May 20 17:28:16 dylan-asahi kernel: apple-isp: ch: 00000000 00000000 00000000 00000000 05100000 000002e0
+May 20 17:28:16 dylan-asahi kernel: apple-isp: ps: CISP_CMD_CH_CAMERA_CONFIG_GET: 0
+May 20 17:28:16 dylan-asahi kernel: apple-isp: ps: 00000000 00000106 00000000 00000000 02e00510 02e00510 00000000 00001df8
+May 20 17:28:16 dylan-asahi kernel: apple-isp: ps: 00000100 00000001 00000040 00000040 00000040 00000040 00000040 00000040
+May 20 17:28:16 dylan-asahi kernel: apple-isp: ps: 00000003 00000040 00000040 00000005 00000000 00000528 00000001 00000000
+May 20 17:28:16 dylan-asahi kernel: apple-isp: ps: 0249f000 00000006 00000007 00000000 00000009 000f4240 00000025 00000000
+May 20 17:28:16 dylan-asahi kernel: apple-isp: ps: 00004000 00000014 00000015 00000000 00000000 00000000 00000510 000002e0
+May 20 17:28:16 dylan-asahi kernel: apple-isp: ps: 00010000 b9680000 0ef80000 00000000 0000001f 00000000 00000000 00000000
+May 20 17:28:16 dylan-asahi kernel: apple-isp: ps: 00000510 000002e0 00000100 00000000 00000000 00000510 000002e0
+May 20 17:28:16 dylan-asahi kernel: apple-isp 22a000000.isp: apple-isp probe!
+May 20 17:28:16 dylan-asahi kernel: ieee80211 phy0: brcmf_dongle_roam: WLC_SET_ROAM_DELTA error (-52)
+May 20 17:28:17 dylan-asahi kernel: ieee80211 phy0: brcmf_p2p_set_firmware: failed to update device address ret -52
+May 20 17:28:17 dylan-asahi kernel: ieee80211 phy0: brcmf_p2p_create_p2pdev: set p2p_disc error
+May 20 17:28:17 dylan-asahi kernel: ieee80211 phy0: brcmf_cfg80211_add_iface: add iface p2p-dev-wlp1s0f type 10 failed: err=-52
+May 20 17:28:17 dylan-asahi kernel: tun: Universal TUN/TAP device driver, 1.6
+May 20 17:28:20 dylan-asahi kernel: warning: `QSampleCache::L' uses wireless extensions which will stop working for Wi-Fi 7 hardware; use nl80211
+May 20 17:28:20 dylan-asahi kernel: Bluetooth: RFCOMM TTY layer initialized
+May 20 17:28:20 dylan-asahi kernel: Bluetooth: RFCOMM socket layer initialized
+May 20 17:28:20 dylan-asahi kernel: Bluetooth: RFCOMM ver 1.11
+May 20 17:30:04 dylan-asahi kernel: macsmc-rtkit 23e400000.smc: RTKit: syslog message: apComms.cpp:375: SMC HID Event: 01 06 00
+May 20 17:30:04 dylan-asahi kernel: macsmc-rtkit 23e400000.smc: RTKit: syslog message: apComms.cpp:375: SMC HID Event: 01 06 01
+May 20 17:30:07 dylan-asahi kernel: macsmc-rtkit 23e400000.smc: RTKit: syslog message: apComms.cpp:375: SMC HID Event: 01 06 00
+May 20 17:30:11 dylan-asahi kernel: snd-soc-macaudio sound: Speaker volumes locked: Main control not locked
+May 20 17:30:14 dylan-asahi kernel: kauditd_printk_skb: 44 callbacks suppressed
+May 20 17:30:14 dylan-asahi kernel: audit: type=1305 audit(1716247814.723:422): op=set audit_pid=0 old=802 auid=4294967295 ses=4294967295 subj=system_u:system_r:auditd_t:s0 res=1
+May 20 17:30:14 dylan-asahi kernel: audit: type=1131 audit(1716247814.725:423): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=auditd comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 20 17:30:14 dylan-asahi kernel: audit: type=1131 audit(1716247814.726:424): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-tmpfiles-setup comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 20 17:30:14 dylan-asahi kernel: audit: type=1334 audit(1716247814.738:425): prog-id=44 op=UNLOAD
+May 20 17:30:14 dylan-asahi kernel: audit: type=1131 audit(1716247814.739:426): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-growfs-root comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 20 17:30:14 dylan-asahi kernel: audit: type=1131 audit(1716247814.740:427): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-growfs@home comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 20 17:30:14 dylan-asahi kernel: EXT4-fs (nvme0n1p5): unmounting filesystem 3d46e6b3-2808-4d00-ad32-0fd7bdbd6bd6.
+May 20 17:30:14 dylan-asahi kernel: audit: type=1131 audit(1716247814.753:428): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-tmpfiles-setup-dev comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 20 17:30:14 dylan-asahi kernel: audit: type=1131 audit(1716247814.753:429): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-tmpfiles-setup-dev-early comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 20 17:30:14 dylan-asahi kernel: audit: type=1131 audit(1716247814.793:430): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=lvm2-monitor comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+May 20 17:30:14 dylan-asahi kernel: audit: type=1131 audit(1716247814.808:431): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=system_u:system_r:init_t:s0 msg='unit=systemd-remount-fs comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+```
+
